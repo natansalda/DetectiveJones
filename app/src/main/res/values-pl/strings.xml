@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Detective Jones: Unsolved Cases</string>
+    <string name="start">Rozpocznij grę</string>
+    <string name="english">ENGLISH</string>
+    <string name="polski">POLSKI</string>
+    <string name="done">Done</string>
+    <string name="configure_character">Configure your character</string>
+    <string name="woman">woman</string>
+    <string name="man">man</string>
+    <string name="name">Your name</string>
+</resources>
