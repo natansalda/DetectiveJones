@@ -13,4 +13,6 @@
     <string name="harvard">I have studied law at Harvard</string>
     <string name="arkanas">I\'ve studied criminology at Arkanas State University</string>
     <string name="high_school">I finished high school and went to year long road trip with friends</string>
+    <string name="what_to_do">What do you want to do</string>
+    <string name="your_score">Your score:</string>
 </resources>

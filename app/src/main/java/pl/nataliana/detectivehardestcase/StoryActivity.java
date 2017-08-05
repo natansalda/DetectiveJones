@@ -1,8 +1,21 @@
 package pl.nataliana.detectivehardestcase;
 
-/**
- * Created by Natalka on 2017-08-05.
- */
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.WindowManager;
 
-public class StoryActivity {
+import butterknife.ButterKnife;
+
+public class StoryActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        //Set the view on fullscreen
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        //Bind the view with a layout
+        setContentView(R.layout.activity_story);
+        ButterKnife.bind(this);
+    }
 }

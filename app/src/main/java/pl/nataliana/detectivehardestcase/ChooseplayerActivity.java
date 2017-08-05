@@ -91,7 +91,7 @@ public class ChooseplayerActivity extends AppCompatActivity {
 
     //this method is called when the user clicks "done" button
     public void startStory(View view) {
-        name = nameEdit.getText().toString().trim();
+        name = nameEdit.getText().toString().trim(); //TODO: take focus off of editText
         Intent i = new Intent(ChooseplayerActivity.this, StoryActivity.class);
         Bundle extras = new Bundle();
         extras.putString("name", name);
