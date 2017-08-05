@@ -32,6 +32,7 @@ public class ChooseplayerActivity extends AppCompatActivity {
         setContentView(R.layout.activity_chooseplayer);
         ButterKnife.bind(this);
 
+
         //this is called when the user chooses the woman face picture
         woman_img.setOnClickListener(new View.OnClickListener() {
             @Override

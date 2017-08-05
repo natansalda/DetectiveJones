@@ -19,8 +19,10 @@ import butterknife.ButterKnife;
 public class MainActivity extends AppCompatActivity {
 
     public Locale mylocale;
-    @BindView(R.id.english) TextView english;
-    @BindView(R.id.polish) TextView polish;
+    @BindView(R.id.english)
+    TextView english;
+    @BindView(R.id.polish)
+    TextView polish;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,11 +66,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(refreshIntent);
     }
 
-    //This method opens QuizActivity
+    //This method opens ChooseplayerActivity
     public void startGame(View view) {
-        Intent mainIntent = new Intent(this, pl.nataliana.detectivehardestcase.ChooseplayerActivity.class);
-        startActivity(mainIntent);
-        finish();
+        Intent i = new Intent(MainActivity.this, ChooseplayerActivity.class);
+        startActivity(i);
     }
 
     public void onBackPressed() {
