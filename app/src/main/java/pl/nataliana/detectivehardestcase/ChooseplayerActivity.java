@@ -92,12 +92,13 @@ public class ChooseplayerActivity extends AppCompatActivity {
     //this method is called when the user clicks "done" button
     public void startStory(View view) {
         name = nameEdit.getText().toString().trim();
-        Intent i = new Intent(this, pl.nataliana.detectivehardestcase.StoryActivity.class);
+        Intent i = new Intent(ChooseplayerActivity.this, StoryActivity.class);
         Bundle extras = new Bundle();
         extras.putString("name", name);
         extras.putString("school", school);
         extras.putInt("facePic", playerFace);
         extras.putInt("score", score);
+        i.putExtras(extras);
         finish();
         startActivity(i);
     }
