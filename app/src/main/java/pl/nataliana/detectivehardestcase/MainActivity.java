@@ -68,8 +68,9 @@ public class MainActivity extends AppCompatActivity {
 
     //This method opens ChooseplayerActivity
     public void startGame(View view) {
-        Intent i = new Intent(MainActivity.this, ChooseplayerActivity.class);
+        Intent i = new Intent(this, ChooseplayerActivity.class);
         startActivity(i);
+        finish();
     }
 
     public void onBackPressed() {
