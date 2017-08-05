@@ -9,4 +9,8 @@
     <string name="woman">woman</string>
     <string name="man">man</string>
     <string name="name">Your name</string>
+    <string name="q_what_school">What school did you attend?</string>
+    <string name="harvard">I have studied law at Harvard</string>
+    <string name="arkanas">I\'ve studied criminology at Arkanas State University</string>
+    <string name="high_school">I finished high school and went to year long road trip with friends</string>
 </resources>

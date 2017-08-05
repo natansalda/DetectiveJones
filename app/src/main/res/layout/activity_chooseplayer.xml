@@ -19,13 +19,21 @@
             style="@style/TextLanguage"
             android:text="@string/configure_character" />
 
+        <TextView
+            android:id="@+id/choose_face"
+            style="@style/NormalText"
+            android:text="@string/choose_your_face" />
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp">
 
             <ImageView
                 android:id="@+id/woman_img"
+                style="@style/Image"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginRight="50dp"
@@ -34,6 +42,7 @@
 
             <ImageView
                 android:id="@+id/man_img"
+                style="@style/Image"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:onClick="imageChoosen"
@@ -41,14 +50,48 @@
 
         </LinearLayout>
 
+        <TextView
+            android:id="@+id/pu_name"
+            style="@style/NormalText"
+            android:text="@string/q_name" />
+
         <EditText
             android:id="@+id/name"
+            style="@style/EditTextQuiz"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
             android:hint="@string/name"
             android:textColor="@color/white"
             android:textColorHint="@color/white" />
+
+        <TextView
+            android:id="@+id/choose_school"
+            style="@style/NormalText"
+            android:text="@string/q_what_school" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/school1"
+                style="@style/RadioGroupStyle"
+                android:onClick="clickSchool1"
+                android:text="@string/harvard" />
+
+            <RadioButton
+                android:id="@+id/school2"
+                style="@style/RadioGroupStyle"
+                android:onClick="clickSchool2"
+                android:text="@string/arkanas" />
+
+            <RadioButton
+                android:id="@+id/school3"
+                style="@style/RadioGroupStyle"
+                android:onClick="clickSchool3"
+                android:text="@string/high_school" />
+        </RadioGroup>
 
         <Button
             android:id="@+id/user_configured"
