@@ -10,8 +10,8 @@
     <string name="name">Your name</string>
     <string name="q_what_school">What school did you attend?</string>
     <string name="q_name">What is your name?</string>
-    <string name="choose_your_face">Choose your face</string>
+    <string name="choose_your_face">Choose your picture</string>
     <string name="harvard">I have studied law at Harvard</string>
     <string name="arkanas">I\'ve studied criminology at Arkanas State University</string>
-    <string name="high_school">I finished high school and went to year long road trip with friends</string>
+    <string name="high_school">I finished high school and went to two years long road trip with friends</string>
 </resources>

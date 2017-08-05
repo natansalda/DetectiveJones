@@ -51,7 +51,7 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/pu_name"
+            android:id="@+id/put_name"
             style="@style/NormalText"
             android:text="@string/q_name" />
 
