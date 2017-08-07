@@ -8,6 +8,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
 import butterknife.BindView;
@@ -33,6 +34,14 @@ public class ChooseplayerActivity extends AppCompatActivity {
     EditText nameEdit;
     @BindView(R.id.user_configured)
     Button user_configured;
+    @BindView(R.id.choose_school)
+    TextView choose_school;
+    @BindView(R.id.school1)
+    RadioButton school1;
+    @BindView(R.id.school2)
+    RadioButton school2;
+    @BindView(R.id.school3)
+    RadioButton school3;
     //This variable will define which image should we use to present player's face
     public int playerFace;
     //This variable will count the score in the game
@@ -58,6 +67,10 @@ public class ChooseplayerActivity extends AppCompatActivity {
         man_img.setVisibility(View.GONE);
         nameEdit.setVisibility(View.GONE);
         user_configured.setVisibility(View.GONE);
+        choose_school.setVisibility(View.GONE);
+        school1.setVisibility(View.GONE);
+        school2.setVisibility(View.GONE);
+        school3.setVisibility(View.GONE);
 
         //this is called when the user chooses the woman face picture
         woman_img.setOnClickListener(new View.OnClickListener() {
@@ -126,5 +139,9 @@ public class ChooseplayerActivity extends AppCompatActivity {
         man_img.setVisibility(View.VISIBLE);
         nameEdit.setVisibility(View.VISIBLE);
         user_configured.setVisibility(View.VISIBLE);
+        choose_school.setVisibility(View.VISIBLE);
+        school1.setVisibility(View.VISIBLE);
+        school2.setVisibility(View.VISIBLE);
+        school3.setVisibility(View.VISIBLE);
     }
 }
