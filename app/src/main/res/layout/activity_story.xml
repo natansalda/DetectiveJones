@@ -23,9 +23,34 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_marginBottom="30dp"
-            android:layout_marginTop="8dp">
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/talk_jones"
+                style="@style/Image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="talkWithJones"
+                android:src="@drawable/talk_to_jones" />
+
+            <ImageView
+                android:id="@+id/talk_witness"
+                style="@style/Image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="30dp"
+                android:onClick="talkToWitness"
+                android:src="@drawable/talk_to_witness" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/case_file"
@@ -34,32 +59,7 @@
                 android:layout_height="100dp"
                 android:layout_marginRight="30dp"
                 android:onClick="seeCaseFile"
-                android:src="@drawable/player_face_f" />
-
-            <ImageView
-                android:id="@+id/talk_jones"
-                style="@style/Image"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:onClick="talkWithJones"
-                android:src="@drawable/player_face_m" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginBottom="30dp">
-
-            <ImageView
-                android:id="@+id/talk_witness"
-                style="@style/Image"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_marginRight="30dp"
-                android:onClick="talkToWitness"
-                android:src="@drawable/player_face_f" />
+                android:src="@drawable/see_case" />
 
             <ImageView
                 android:id="@+id/see_proofs"
@@ -67,7 +67,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:onClick="seeProofs"
-                android:src="@drawable/player_face_m" />
+                android:src="@drawable/see_evience" />
 
         </LinearLayout>
 
@@ -77,17 +77,17 @@
             android:layout_width="240dp"
             android:layout_height="100dp"
             android:onClick="solveCase"
-            android:src="@drawable/player_face_m" />
+            android:src="@drawable/solve" />
 
     </LinearLayout>
 
     <TextView
         android:id="@+id/score"
         style="@style/NormalText"
-        android:text="@string/your_score"
-        android:gravity="bottom"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:padding="16dp"/>
+        android:gravity="bottom"
+        android:padding="16dp"
+        android:text="@string/your_score" />
 </RelativeLayout>

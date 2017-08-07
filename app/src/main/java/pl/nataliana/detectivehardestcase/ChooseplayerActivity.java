@@ -15,6 +15,14 @@ import butterknife.ButterKnife;
 
 public class ChooseplayerActivity extends AppCompatActivity {
 
+    @BindView(R.id.welcome)
+    TextView welcome;
+    @BindView(R.id.welcome_txt)
+    TextView welcome_txt;
+    @BindView(R.id.welcome_txt2)
+    TextView welcome_txt2;
+    @BindView(R.id.ok)
+    Button ok;
     @BindView(R.id.configure_txt)
     TextView configure_txt;
     @BindView(R.id.woman_img)
@@ -44,6 +52,13 @@ public class ChooseplayerActivity extends AppCompatActivity {
         setContentView(R.layout.activity_chooseplayer);
         ButterKnife.bind(this);
 
+        //This decides about visibility of views
+        configure_txt.setVisibility(View.GONE);
+        woman_img.setVisibility(View.GONE);
+        man_img.setVisibility(View.GONE);
+        nameEdit.setVisibility(View.GONE);
+        user_configured.setVisibility(View.GONE);
+
         //this is called when the user chooses the woman face picture
         woman_img.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,31 +82,28 @@ public class ChooseplayerActivity extends AppCompatActivity {
 
     //this method is called when the user chooses 1st school
     public void clickSchool1(View view) {
-        school = "Harvard";
-        score = 0;
-        score =+ 20;
+        school = getString(R.string.school1);
+        score = 20;
 
     }
 
     //this method is called when the user chooses 2nd school
     public void clickSchool2(View view) {
-        school = "Arkanas State University";
-        score = 0;
-        score =+ 50;
+        school = getString(R.string.school2);
+        score = 50;
 
     }
 
     //this method is called when the user chooses 3rd school
     public void clickSchool3(View view) {
-        school = "School of Life";
-        score = 0;
-        score =+ 10;
+        school = getString(R.string.school3);
+        score = 10;
 
     }
 
     //this method is called when the user clicks "done" button
     public void startStory(View view) {
-        name = nameEdit.getText().toString().trim(); //TODO: take focus off of editText
+        name = nameEdit.getText().toString().trim();
         Intent i = new Intent(ChooseplayerActivity.this, StoryActivity.class);
         Bundle extras = new Bundle();
         extras.putString("name", name);
@@ -101,5 +113,18 @@ public class ChooseplayerActivity extends AppCompatActivity {
         i.putExtras(extras);
         finish();
         startActivity(i);
+    }
+
+    //This method is called when the user clicks "ok" button
+    public void ok(View view) {
+        welcome.setVisibility(View.GONE);
+        welcome_txt.setVisibility(View.GONE);
+        welcome_txt2.setVisibility(View.GONE);
+        ok.setVisibility(View.GONE);
+        configure_txt.setVisibility(View.VISIBLE);
+        woman_img.setVisibility(View.VISIBLE);
+        man_img.setVisibility(View.VISIBLE);
+        nameEdit.setVisibility(View.VISIBLE);
+        user_configured.setVisibility(View.VISIBLE);
     }
 }

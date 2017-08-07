@@ -15,4 +15,10 @@
     <string name="high_school">I finished high school and went to year long road trip with friends</string>
     <string name="what_to_do">What do you want to do</string>
     <string name="your_score">Your score:</string>
+    <string name="school1">Harvard</string>
+    <string name="school2">Arkansas State University</string>
+    <string name="school3">School of Life</string>
+    <string name="welcome">Welcome to the game</string>
+    <string name="welcome_txt">You will soon begin work in the homicide department at one of the New York police stations. Your mentor and teacher is notorious Detective Jones. His knowledge and experience will surely help you to take the first steps in this demanding profession, but do not let him down! It is definitely the person you should have on your side.</string>
+    <string name="ok">OK</string>
 </resources>
