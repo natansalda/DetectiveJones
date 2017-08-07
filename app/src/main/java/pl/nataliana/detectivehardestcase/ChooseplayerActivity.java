@@ -42,6 +42,10 @@ public class ChooseplayerActivity extends AppCompatActivity {
     RadioButton school2;
     @BindView(R.id.school3)
     RadioButton school3;
+    @BindView(R.id.put_name)
+    TextView put_name;
+    @BindView(R.id.choose_face)
+    TextView choose_face;
     //This variable will define which image should we use to present player's face
     public int playerFace;
     //This variable will count the score in the game
@@ -71,6 +75,8 @@ public class ChooseplayerActivity extends AppCompatActivity {
         school1.setVisibility(View.GONE);
         school2.setVisibility(View.GONE);
         school3.setVisibility(View.GONE);
+        put_name.setVisibility(View.GONE);
+        choose_face.setVisibility(View.GONE);
 
         //this is called when the user chooses the woman face picture
         woman_img.setOnClickListener(new View.OnClickListener() {
@@ -143,5 +149,7 @@ public class ChooseplayerActivity extends AppCompatActivity {
         school1.setVisibility(View.VISIBLE);
         school2.setVisibility(View.VISIBLE);
         school3.setVisibility(View.VISIBLE);
+        put_name.setVisibility(View.VISIBLE);
+        choose_face.setVisibility(View.VISIBLE);
     }
 }
