@@ -61,28 +61,40 @@ public class StoryActivity extends AppCompatActivity {
     }
 
     public void talkWithJones (View view) {
-        Toast.makeText(StoryActivity.this, "Soon!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(StoryActivity.this, R.string.soon, Toast.LENGTH_SHORT).show();
         //TODO: open new activity
     }
 
     public void talkToWitness (View view) {
-        Toast.makeText(StoryActivity.this, "Soon!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(StoryActivity.this, R.string.soon, Toast.LENGTH_SHORT).show();
         //TODO: open new activity
     }
 
     public void seeCaseFile (View view) {
-        Toast.makeText(StoryActivity.this, "Soon!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(StoryActivity.this, R.string.soon, Toast.LENGTH_SHORT).show();
         //TODO: open new activity
     }
 
     public void seeProofs (View view) {
-        Toast.makeText(StoryActivity.this, "Soon!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(StoryActivity.this, R.string.soon, Toast.LENGTH_SHORT).show();
         //TODO: open new activity
     }
 
     public void solveCase (View view) {
-        Toast.makeText(StoryActivity.this, "Soon!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(StoryActivity.this, R.string.soon, Toast.LENGTH_SHORT).show();
         //TODO: open new activity
     }
 
+    //This will prevent accidentaly leaving the application
+    boolean doubleBackToExitPressedOnce = false;
+
+    @Override
+    public void onBackPressed() {
+        if (doubleBackToExitPressedOnce) {
+            super.onBackPressed();
+            return;
+        }
+        this.doubleBackToExitPressedOnce = true;
+        Toast.makeText(this, R.string.back_twice, Toast.LENGTH_SHORT).show();
+    }
 }
