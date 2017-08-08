@@ -25,6 +25,9 @@
         <activity
             android:name=".StoryActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".CaseActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

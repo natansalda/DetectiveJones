@@ -71,8 +71,8 @@ public class StoryActivity extends AppCompatActivity {
     }
 
     public void seeCaseFile (View view) {
-        Toast.makeText(StoryActivity.this, R.string.soon, Toast.LENGTH_SHORT).show();
-        //TODO: open new activity
+        Intent c = new Intent(StoryActivity.this, CaseActivity.class);
+        startActivity(c);
     }
 
     public void seeProofs (View view) {

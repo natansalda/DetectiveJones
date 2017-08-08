@@ -33,4 +33,7 @@
     <string name="unknown">Unknown</string>
     <string name="murder_weapon">Murder weapon:</string>
     <string name="motive_of_killing">Motive of killing:</string>
+    <string name="couse_of_death">Couse of death:</string>
+    <string name="victims_occupation">Victim\'s occupation:</string>
+    <string name="student">student</string>
 </resources>

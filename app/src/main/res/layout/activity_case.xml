@@ -59,12 +59,31 @@
             android:textAllCaps="false" />
 
         <TextView
+            android:id="@+id/victim_work_title"
+            style="@style/NormalText"
+            android:layout_width="match_parent"
+            android:gravity="start|end"
+            android:padding="2dp"
+            android:text="@string/victims_occupation"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/victim_work"
+            style="@style/NormalText"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="8dp"
+            android:gravity="start|end"
+            android:padding="2dp"
+            android:text="@string/student"
+            android:textAllCaps="false" />
+
+        <TextView
             android:id="@+id/couse_death_title"
             style="@style/NormalText"
             android:layout_width="match_parent"
             android:gravity="start|end"
             android:padding="2dp"
-            android:text="Couse of death:"
+            android:text="@string/couse_of_death"
             android:textAllCaps="true" />
 
         <TextView
