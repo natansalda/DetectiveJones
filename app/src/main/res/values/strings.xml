@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Detective Jones: Unsolved Cases</string>
     <string name="start">Start Game</string>
-    <string name="english">ENGLISH</string>
-    <string name="polski">POLSKI</string>
+    <string name="english" translatable="false">ENGLISH</string>
+    <string name="polski" translatable="false">POLSKI</string>
     <string name="done">Done</string>
     <string name="configure_character">Configure your character</string>
     <string name="woman">woman</string>
@@ -14,20 +14,20 @@
     <string name="harvard">I have studied law at Harvard</string>
     <string name="arkanas">I\'ve studied criminology at Arkanas State University</string>
     <string name="high_school">I finished high school and went to two years long road trip with friends</string>
-    <string name="what_to_do">What do you want to do</string>
-    <string name="your_score">Your score:</string>
+    <string name="what_to_do">What do you want to do now?</string>
+    <string name="your_score">Your current score:</string>
     <string name="school1">Harvard</string>
     <string name="school2">Arkansas State University</string>
     <string name="school3">School of Life</string>
     <string name="welcome">Welcome to the game</string>
     <string name="welcome_txt">You will soon begin to work in the homicide department at one of the New York\'s police stations. Your mentor and teacher is notorious Detective Jones. His knowledge and experience will surely help you to take the first steps in this demanding profession, but do not let him down! He is definitely the person you should have on your side. </string>
     <string name="welcome_txt2">Your first case will be to solve the mystery of the death of a New York University student. Katy was very popular girl, she had good grades, and never got into trouble. And yet, yesterday she was found dead in a fountain in a university park... \nDo not disappoint Detective Jones and show what you are worth - solve this case as soon as possible!</string>
-    <string name="ok">OK</string>
+    <string name="ok" translatable="false">OK</string>
     <string name="back_twice">Please click BACK again to exit</string>
     <string name="soon">Soon!</string>
     <string name="murder_case_files_title">Murder case files</string>
     <string name="name_of_victim">Name of victim:</string>
-    <string name="katy_flanagan">Katy Flanagan</string>
+    <string name="katy_flanagan" translatable="false">Katy Flanagan</string>
     <string name="victim_age">Victim age:</string>
     <string name="_21yo">21yo</string>
     <string name="unknown">Unknown</string>
