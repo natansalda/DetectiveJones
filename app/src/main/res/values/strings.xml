@@ -14,7 +14,7 @@
     <string name="harvard">I have studied law at Harvard</string>
     <string name="arkanas">I\'ve studied criminology at Arkanas State University</string>
     <string name="high_school">I finished high school and went to two years long road trip with friends</string>
-    <string name="what_to_do">What do you want to do now?</string>
+    <string name="what_to_do">What do you want to do now</string>
     <string name="your_score">Your current score:</string>
     <string name="school1">Harvard</string>
     <string name="school2">Arkansas State University</string>
@@ -36,4 +36,5 @@
     <string name="couse_of_death">Couse of death:</string>
     <string name="victims_occupation">Victim\'s occupation:</string>
     <string name="student">student</string>
+    <string name="main_menu">Main menu</string>
 </resources>

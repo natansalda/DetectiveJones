@@ -60,27 +60,27 @@ public class StoryActivity extends AppCompatActivity {
         score_tv.setText(currentScore);
     }
 
-    public void talkWithJones (View view) {
+    public void talkWithJones(View view) {
         Toast.makeText(StoryActivity.this, R.string.soon, Toast.LENGTH_SHORT).show();
         //TODO: open new activity
     }
 
-    public void talkToWitness (View view) {
+    public void talkToWitness(View view) {
         Toast.makeText(StoryActivity.this, R.string.soon, Toast.LENGTH_SHORT).show();
         //TODO: open new activity
     }
 
-    public void seeCaseFile (View view) {
+    public void seeCaseFile(View view) {
         Intent c = new Intent(StoryActivity.this, CaseActivity.class);
         startActivity(c);
     }
 
-    public void seeProofs (View view) {
+    public void seeProofs(View view) {
         Toast.makeText(StoryActivity.this, R.string.soon, Toast.LENGTH_SHORT).show();
         //TODO: open new activity
     }
 
-    public void solveCase (View view) {
+    public void solveCase(View view) {
         Toast.makeText(StoryActivity.this, R.string.soon, Toast.LENGTH_SHORT).show();
         //TODO: open new activity
     }

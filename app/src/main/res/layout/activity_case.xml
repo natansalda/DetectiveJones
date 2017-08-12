@@ -11,7 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="top"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingLeft="8dp">
 
         <TextView
             android:id="@+id/case_file_title"
@@ -162,7 +163,7 @@
             style="@style/ButtonMain"
             android:layout_margin="16dp"
             android:onClick="backToStory"
-            android:text="Main menu" />
+            android:text="@string/main_menu" />
 
     </LinearLayout>
 </ScrollView>
