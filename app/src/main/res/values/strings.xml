@@ -37,4 +37,5 @@
     <string name="victims_occupation">Victim\'s occupation:</string>
     <string name="student">student</string>
     <string name="main_menu">Main menu</string>
+    <string name="murderer_name">Murderer name:</string>
 </resources>

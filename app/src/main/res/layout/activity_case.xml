@@ -144,7 +144,7 @@
             android:layout_width="match_parent"
             android:gravity="start|end"
             android:padding="2dp"
-            android:text="Murderer name:"
+            android:text="@string/murderer_name"
             android:textAllCaps="true" />
 
         <TextView

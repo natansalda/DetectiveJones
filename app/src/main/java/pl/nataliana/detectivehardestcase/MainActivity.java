@@ -73,9 +73,17 @@ public class MainActivity extends AppCompatActivity {
         finish();
     }
 
-    public void onBackPressed() {
-        //  super.onBackPressed();
-        moveTaskToBack(true);
 
+    //This will prevent accidentaly leaving the application
+    boolean doubleBackToExitPressedOnce = false;
+
+    @Override
+    public void onBackPressed() {
+        if (doubleBackToExitPressedOnce) {
+            super.onBackPressed();
+            return;
+        }
+        this.doubleBackToExitPressedOnce = true;
+        Toast.makeText(this, R.string.back_twice, Toast.LENGTH_SHORT).show();
     }
 }

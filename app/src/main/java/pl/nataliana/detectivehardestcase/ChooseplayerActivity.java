@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -151,5 +152,19 @@ public class ChooseplayerActivity extends AppCompatActivity {
         school3.setVisibility(View.VISIBLE);
         put_name.setVisibility(View.VISIBLE);
         choose_face.setVisibility(View.VISIBLE);
+    }
+
+
+    //This will prevent accidentaly leaving the application
+    boolean doubleBackToExitPressedOnce = false;
+
+    @Override
+    public void onBackPressed() {
+        if (doubleBackToExitPressedOnce) {
+            super.onBackPressed();
+            return;
+        }
+        this.doubleBackToExitPressedOnce = true;
+        Toast.makeText(this, R.string.back_twice, Toast.LENGTH_SHORT).show();
     }
 }

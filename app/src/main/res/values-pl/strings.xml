@@ -11,7 +11,7 @@
     <string name="name">Twoje imię</string>
     <string name="q_what_school">Twoja edukacja:</string>
     <string name="harvard">Prawo na Harvardzie nie ma sobie równych</string>
-    <string name="arkanas">Kryminalistyka na Arkanas State University były świetnym wyborem!</string>
+    <string name="arkanas">Kryminalistyka na Arkanas State University była świetnym wyborem!</string>
     <string name="high_school">Po skończeniu liceum najlepszy wybór to roczna przerwa i zwiedzanie kraju z przyjaciółmi</string>
     <string name="what_to_do">Co chcesz teraz zrobić</string>
     <string name="your_score">Twój aktualny wynik:</string>
@@ -38,4 +38,5 @@
     <string name="q_name">Jak masz na imię?</string>
     <string name="welcome_txt2">"Twoja pierwsza sprawa dotyczyć będzie zagadki śmierci studentki Uniwersytetu Nowego Jorku. Katy była lubianą dziewczyną, miała dobre stopnie i nigdy nie pakowała się w kłopoty. A jednak wczoraj znaleziona została martwa w fontannie w przyuniwersyteckim parku... Nie zawiedź Detektywa Jonesa i pokaż na co cię stać - rozwiąż tę sprawę najszybciej jak to możliwe. "</string>
     <string name="main_menu">Menu główne</string>
+    <string name="murderer_name">Nazwisko zabójcy:</string>
 </resources>
