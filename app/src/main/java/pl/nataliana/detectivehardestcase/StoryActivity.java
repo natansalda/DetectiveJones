@@ -72,6 +72,7 @@ public class StoryActivity extends AppCompatActivity {
 
     public void seeCaseFile(View view) {
         Intent c = new Intent(StoryActivity.this, CaseActivity.class);
+        finish();
         startActivity(c);
     }
 

@@ -17,6 +17,7 @@ public class Dialog {
         this.mText = mText;
     }
 
+    // Getters and setters
     public int getmImageDrawable() {
         return mImageDrawable;
     }

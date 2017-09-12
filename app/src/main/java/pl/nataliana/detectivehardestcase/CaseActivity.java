@@ -1,5 +1,6 @@
 package pl.nataliana.detectivehardestcase;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.WindowManager;
@@ -53,6 +54,12 @@ public class CaseActivity extends AppCompatActivity {
         //Bind the view with a layout
         setContentView(R.layout.activity_case);
         ButterKnife.bind(this);
+    }
+
+    public void backToStory() {
+        //TODO not working - app ends
+        Intent s = new Intent(CaseActivity.this, StoryActivity.class);
+        startActivity(s);
     }
 
     //This will prevent accidentaly leaving the application
