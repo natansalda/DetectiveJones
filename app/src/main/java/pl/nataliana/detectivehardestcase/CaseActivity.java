@@ -43,7 +43,7 @@ public class CaseActivity extends AppCompatActivity {
     @BindView(R.id.murderer_name)
     TextView murderer_name;
     @BindView(R.id.back_to_story)
-    TextView back_to_story;
+    ImageView back_to_story;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,11 +56,11 @@ public class CaseActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    public void backToStory() {
-        //TODO not working - app ends
-        Intent s = new Intent(CaseActivity.this, StoryActivity.class);
-        startActivity(s);
-    }
+     @OnClick(R.id.back_to_story)    
+     public void backToStory(View view) { 
+         Intent s = new Intent(CaseActivity.this, StoryActivity.class); 
+         startActivity(s);
+     }
 
     //This will prevent accidentaly leaving the application
     boolean doubleBackToExitPressedOnce = false;
