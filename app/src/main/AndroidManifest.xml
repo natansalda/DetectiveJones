@@ -19,14 +19,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ChooseplayerActivity"
+            android:name="pl.nataliana.detectivehardestcase.ChooseplayerActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden"/>
         <activity
-            android:name=".StoryActivity"
+            android:name="pl.nataliana.detectivehardestcase.StoryActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".CaseActivity"
+            android:name="pl.nataliana.detectivehardestcase.CaseActivity"
             android:screenOrientation="portrait" />
     </application>
 

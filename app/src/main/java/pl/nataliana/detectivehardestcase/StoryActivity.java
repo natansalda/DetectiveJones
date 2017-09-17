@@ -32,6 +32,14 @@ public class StoryActivity extends AppCompatActivity {
     ImageView see_proofs;
     @BindView(R.id.solve_case)
     ImageView solve_case;
+    //This variable will define which image should we use to present player's face
+    public int playerFace;
+    //This variable will count the score in the game
+    public int score;
+    //This variable will keep player's name
+    public String name;
+    //This variable will keep player's school
+    public String school;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,7 +80,12 @@ public class StoryActivity extends AppCompatActivity {
 
     public void seeCaseFile(View view) {
         Intent c = new Intent(StoryActivity.this, CaseActivity.class);
-        finish();
+        Bundle extras = new Bundle();
+        extras.putString("name", name);
+        extras.putString("school", school);
+        extras.putInt("facePic", playerFace);
+        extras.putInt("score", score);
+        c.putExtras(extras);
         startActivity(c);
     }
 
@@ -98,4 +111,12 @@ public class StoryActivity extends AppCompatActivity {
         this.doubleBackToExitPressedOnce = true;
         Toast.makeText(this, R.string.back_twice, Toast.LENGTH_SHORT).show();
     }
+
+
+
+
+
+
+
+
 }
