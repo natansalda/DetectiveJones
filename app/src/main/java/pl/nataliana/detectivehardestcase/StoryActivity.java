@@ -12,6 +12,8 @@ import android.widget.Toast;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+import static pl.nataliana.detectivehardestcase.ChooseplayerActivity.NAME;
+
 public class StoryActivity extends AppCompatActivity {
 
     //This variable shows main message in activity and adds a user name
@@ -32,14 +34,8 @@ public class StoryActivity extends AppCompatActivity {
     ImageView see_proofs;
     @BindView(R.id.solve_case)
     ImageView solve_case;
-    //This variable will define which image should we use to present player's face
-    public int playerFace;
     //This variable will count the score in the game
     public int score;
-    //This variable will keep player's name
-    public String name;
-    //This variable will keep player's school
-    public String school;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,10 +50,10 @@ public class StoryActivity extends AppCompatActivity {
         //Get intents from previous activity
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
-        String name = extras.getString("name");
+        String name = extras.getString(NAME);
+        int score = extras.getInt("score");
         String school = extras.getString("school");
         int playerFace = extras.getInt("playerFace");
-        int score = extras.getInt("score");
 
         //Set text to what_to_do_txt
         mainMessage = getString(R.string.what_to_do) + " " + name + "?";
@@ -80,12 +76,7 @@ public class StoryActivity extends AppCompatActivity {
 
     public void seeCaseFile(View view) {
         Intent c = new Intent(StoryActivity.this, CaseActivity.class);
-        Bundle extras = new Bundle();
-        extras.putString("name", name);
-        extras.putString("school", school);
-        extras.putInt("facePic", playerFace);
-        extras.putInt("score", score);
-        c.putExtras(extras);
+        c.putExtras(getIntent().getExtras());
         startActivity(c);
     }
 
@@ -99,7 +90,7 @@ public class StoryActivity extends AppCompatActivity {
         //TODO: open new activity
     }
 
-    //This will prevent accidentaly leaving the application
+    //This will prevent accidentally leaving the application
     boolean doubleBackToExitPressedOnce = false;
 
     @Override
@@ -111,12 +102,6 @@ public class StoryActivity extends AppCompatActivity {
         this.doubleBackToExitPressedOnce = true;
         Toast.makeText(this, R.string.back_twice, Toast.LENGTH_SHORT).show();
     }
-
-
-
-
-
-
 
 
 }

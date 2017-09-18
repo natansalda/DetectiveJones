@@ -52,7 +52,7 @@ public class ChooseplayerActivity extends AppCompatActivity {
     //This variable will count the score in the game
     public int score;
     //This variable will keep player's name
-    public String name;
+    public static final String NAME = "name";
     //This variable will keep player's school
     public String school;
 
@@ -123,10 +123,10 @@ public class ChooseplayerActivity extends AppCompatActivity {
 
     //this method is called when the user clicks "done" button
     public void startStory(View view) {
-        name = nameEdit.getText().toString().trim();
+        String name = nameEdit.getText().toString().trim();
         Intent i = new Intent(ChooseplayerActivity.this, StoryActivity.class);
         Bundle extras = new Bundle();
-        extras.putString("name", name);
+        extras.putString(NAME, name);
         extras.putString("school", school);
         extras.putInt("facePic", playerFace);
         extras.putInt("score", score);
