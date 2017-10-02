@@ -81,8 +81,9 @@ public class StoryActivity extends AppCompatActivity {
     }
 
     public void seeProofs(View view) {
-        Toast.makeText(StoryActivity.this, R.string.soon, Toast.LENGTH_SHORT).show();
-        //TODO: open new activity
+        Intent c = new Intent(StoryActivity.this, ProofsActivity.class);
+        c.putExtras(getIntent().getExtras());
+        startActivity(c);
     }
 
     public void solveCase(View view) {
