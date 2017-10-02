@@ -5,9 +5,13 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.WindowManager;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -17,11 +21,13 @@ import static pl.nataliana.detectivehardestcase.ChooseplayerActivity.NAME;
 public class ProofsActivity extends AppCompatActivity{
 
     @BindView(R.id.face_iv)
-    ImageView what_to_do_txt;
+    ImageView proofImageView;
     @BindView(R.id.name_tv)
-    TextView score_tv;
+    TextView proofNameTextView;
     @BindView(R.id.dialog_tv)
-    TextView talk_jones;
+    TextView proofDescriptionTextView;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +38,17 @@ public class ProofsActivity extends AppCompatActivity{
         //Bind the view with a layout
         setContentView(R.layout.dialog_list_item);
         ButterKnife.bind(this);
+
+        // Create a list of proofs
+        final ArrayList<Dialog> proofsData = new ArrayList<Dialog>();
+        proofsData.add(new Dialog(R.drawable.fingerprint, "Fingerprint", "Fingerprint found on the statue head."));
+        proofsData.add(new Dialog(R.drawable.statue_head, "Destroyed statue", "This is a statue with head detached. It looks suspicious.When you come closer you see something read close to the angel ear. Is it blood?"));
+        proofsData.add(new Dialog(R.drawable.notebook, "Notebook", "This is a Katy's notebook. Looks like she has a stalker."));
+
+
+        DialogAdapter adapter = new DialogAdapter(this, proofsData);
+        ListView listView = (ListView) findViewById(R.id.list);
+        listView.setAdapter(adapter);
 
     }
 }

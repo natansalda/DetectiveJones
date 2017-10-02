@@ -32,7 +32,7 @@ public class DialogAdapter extends ArrayAdapter<Dialog> {
         if(listItem == null)
             listItem = LayoutInflater.from(mContext).inflate(R.layout.dialog_list_item,parent,false);
 
-        Dialog currentDialog = dialogList.get(position);
+        Dialog currentDialog = getItem(position);
 
         ImageView image = (ImageView)listItem.findViewById(R.id.face_iv);
         image.setImageResource(currentDialog.getmImageDrawable());
@@ -40,8 +40,8 @@ public class DialogAdapter extends ArrayAdapter<Dialog> {
         TextView name = (TextView) listItem.findViewById(R.id.name_tv);
         name.setText(currentDialog.getmName());
 
-        TextView release = (TextView) listItem.findViewById(R.id.dialog_tv);
-        release.setText(currentDialog.getmText());
+        TextView dialog = (TextView) listItem.findViewById(R.id.dialog_tv);
+        dialog.setText(currentDialog.getmText());
 
         return listItem;
     }
