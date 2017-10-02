@@ -38,4 +38,6 @@
     <string name="student">student</string>
     <string name="main_menu">Main menu</string>
     <string name="murderer_name">Murderer name:</string>
+    <string name="name_dialog">Name</string>
+    <string name="text_dialog">This is a dialog box. Everthing the person says is here.</string>
 </resources>

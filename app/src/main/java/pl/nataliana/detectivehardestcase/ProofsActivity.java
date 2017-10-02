@@ -1,6 +1,5 @@
 package pl.nataliana.detectivehardestcase;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.WindowManager;
@@ -8,10 +7,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
-import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -46,9 +42,8 @@ public class ProofsActivity extends AppCompatActivity{
         proofsData.add(new Dialog(R.drawable.notebook, "Notebook", "This is a Katy's notebook. Looks like she has a stalker."));
 
 
-        DialogAdapter adapter = new DialogAdapter(this, proofsData);
+        DialogAdapter adapter = new DialogAdapter(ProofsActivity.this, proofsData);
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(adapter);
-
     }
 }

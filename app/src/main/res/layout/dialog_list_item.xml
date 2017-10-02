@@ -7,7 +7,9 @@
     <ImageView
         android:id="@+id/face_iv"
         android:layout_width="100dp"
-        android:layout_height="100dp" />
+        android:layout_height="100dp"
+        android:src="@drawable/fingerprint"
+        android:padding="8dp"/>
 
     <TextView
         android:id="@+id/name_tv"
@@ -16,10 +18,11 @@
         android:layout_alignTop="@+id/face_iv"
         android:layout_toEndOf="@+id/face_iv"
         android:layout_toRightOf="@+id/face_iv"
-        android:text="Name"
+        android:text="@string/name_dialog"
         android:textAllCaps="true"
         android:textSize="16sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:paddingTop="8dp"/>
 
     <TextView
         android:id="@+id/dialog_tv"
@@ -29,7 +32,7 @@
         android:layout_toEndOf="@+id/face_iv"
         android:layout_toRightOf="@+id/face_iv"
         android:gravity="left"
-        android:text="This is a dialog box. Everthing the person says is here."
+        android:text="@string/text_dialog"
         android:textAlignment="gravity"
         android:textSize="16sp"
         android:textStyle="normal" />
