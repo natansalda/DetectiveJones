@@ -36,7 +36,7 @@ public class ProofsActivity extends AppCompatActivity{
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         //Bind the view with a layout
-        setContentView(R.layout.dialog_list_item);
+        setContentView(R.layout.dialog_list);
         ButterKnife.bind(this);
 
         // Create a list of proofs

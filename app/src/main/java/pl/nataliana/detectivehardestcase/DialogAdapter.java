@@ -16,21 +16,15 @@ import java.util.List;
 public class DialogAdapter extends ArrayAdapter<Dialog> {
     //TODO: check the code below and add coments
 
-    private Context mContext;
-    private List<Dialog> dialogList = new ArrayList<>();
-
-    public DialogAdapter(@NonNull Context context, ArrayList<Dialog> list) {
-        super(context, 0 , list);
-        mContext = context;
-        dialogList = list;
+    public DialogAdapter(Context context, ArrayList<Dialog> proofsData) {
+        super(context, 0 , proofsData);
     }
 
-    @NonNull
     @Override
-    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+    public View getView(int position, View convertView, ViewGroup parent) {
         View listItem = convertView;
         if(listItem == null)
-            listItem = LayoutInflater.from(mContext).inflate(R.layout.dialog_list_item,parent,false);
+            listItem = LayoutInflater.from(getContext()).inflate(R.layout.dialog_list_item,parent,false);
 
         Dialog currentDialog = getItem(position);
 
