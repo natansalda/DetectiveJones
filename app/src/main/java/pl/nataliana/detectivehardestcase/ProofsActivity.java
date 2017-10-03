@@ -17,13 +17,6 @@ import static pl.nataliana.detectivehardestcase.ChooseplayerActivity.NAME;
 
 public class ProofsActivity extends AppCompatActivity {
 
-    @BindView(R.id.face_iv)
-    ImageView proofImageView;
-    @BindView(R.id.name_tv)
-    TextView proofNameTextView;
-    @BindView(R.id.dialog_tv)
-    TextView proofDescriptionTextView;
-
     private DialogAdapter adapter;
     private ListView listView;
 
@@ -47,19 +40,6 @@ public class ProofsActivity extends AppCompatActivity {
 
         adapter = new DialogAdapter(ProofsActivity.this, proofsData);
         listView.setAdapter(adapter);
-
-//        for (Dialog proof : proofsData) {
-//            proofImageView.setImageDrawable(Drawable.createFromPath(proof + "\n\n\n"));
-//        }
-//
-//        for (Dialog proof : proofsData) {
-//            proofNameTextView.append(proof + "\n\n\n");
-//        }
-//
-//        for (Dialog proof : proofsData) {
-//            proofDescriptionTextView.append(proof + "\n\n\n");
-//        }
-
 
     }
 }
