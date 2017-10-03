@@ -1,5 +1,6 @@
 package pl.nataliana.detectivehardestcase;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.WindowManager;
@@ -14,7 +15,7 @@ import butterknife.ButterKnife;
 
 import static pl.nataliana.detectivehardestcase.ChooseplayerActivity.NAME;
 
-public class ProofsActivity extends AppCompatActivity{
+public class ProofsActivity extends AppCompatActivity {
 
     @BindView(R.id.face_iv)
     ImageView proofImageView;
@@ -36,7 +37,7 @@ public class ProofsActivity extends AppCompatActivity{
         setContentView(R.layout.dialog_list);
         ButterKnife.bind(this);
 
-       listView = (ListView) findViewById(R.id.list);
+        listView = (ListView) findViewById(R.id.list);
 
         // Create a list of proofs
         ArrayList<Dialog> proofsData = new ArrayList<Dialog>();
@@ -46,5 +47,19 @@ public class ProofsActivity extends AppCompatActivity{
 
         adapter = new DialogAdapter(ProofsActivity.this, proofsData);
         listView.setAdapter(adapter);
+
+//        for (Dialog proof : proofsData) {
+//            proofImageView.setImageDrawable(Drawable.createFromPath(proof + "\n\n\n"));
+//        }
+//
+//        for (Dialog proof : proofsData) {
+//            proofNameTextView.append(proof + "\n\n\n");
+//        }
+//
+//        for (Dialog proof : proofsData) {
+//            proofDescriptionTextView.append(proof + "\n\n\n");
+//        }
+
+
     }
 }

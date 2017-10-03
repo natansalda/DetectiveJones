@@ -2,7 +2,7 @@ package pl.nataliana.detectivehardestcase;
 
 public class Dialog {
 
-    // Store the id of the face of the person speaking
+    // Store the id of the image
     private int mImageDrawable;
     // Store the name of the person
     private String mName;
