@@ -23,7 +23,8 @@ public class ProofsActivity extends AppCompatActivity{
     @BindView(R.id.dialog_tv)
     TextView proofDescriptionTextView;
 
-
+    private DialogAdapter adapter;
+    private ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,15 +36,15 @@ public class ProofsActivity extends AppCompatActivity{
         setContentView(R.layout.dialog_list);
         ButterKnife.bind(this);
 
+       listView = (ListView) findViewById(R.id.list);
+
         // Create a list of proofs
-        final ArrayList<Dialog> proofsData = new ArrayList<Dialog>();
+        ArrayList<Dialog> proofsData = new ArrayList<Dialog>();
         proofsData.add(new Dialog(R.drawable.fingerprint, "Fingerprint", "Fingerprint found on the statue head."));
         proofsData.add(new Dialog(R.drawable.statue_head, "Destroyed statue", "This is a statue with head detached. It looks suspicious.When you come closer you see something read close to the angel ear. Is it blood?"));
         proofsData.add(new Dialog(R.drawable.notebook, "Notebook", "This is a Katy's notebook. Looks like she has a stalker."));
 
-
-        DialogAdapter adapter = new DialogAdapter(ProofsActivity.this, proofsData);
-        ListView listView = (ListView) findViewById(R.id.list);
+        adapter = new DialogAdapter(ProofsActivity.this, proofsData);
         listView.setAdapter(adapter);
     }
 }
