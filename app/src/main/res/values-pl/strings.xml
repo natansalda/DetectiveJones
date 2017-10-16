@@ -39,4 +39,12 @@
     <string name="welcome_txt2">"Twoja pierwsza sprawa dotyczyć będzie zagadki śmierci studentki Uniwersytetu Nowego Jorku. Katy była lubianą dziewczyną, miała dobre stopnie i nigdy nie pakowała się w kłopoty. A jednak wczoraj znaleziona została martwa w fontannie w przyuniwersyteckim parku... Nie zawiedź Detektywa Jonesa i pokaż na co cię stać - rozwiąż tę sprawę najszybciej jak to możliwe. "</string>
     <string name="main_menu">Menu główne</string>
     <string name="murderer_name">Nazwisko zabójcy:</string>
+    <string name="name_dialog">Imię</string>
+    <string name="text_dialog"></string>
+    <string name="fingerprint">Odcisk palca</string>
+    <string name="fingerprint_title">Odcisk palca znaleziony na głowie pomnika</string>
+    <string name="notebook">Pamiętnik</string>
+    <string name="notebook_title">To jest pamiętnik Katy</string>
+    <string name="statue">Zniszczony pomnik</string>
+    <string name="statue_title">"Ten pomnik ma oderwaną głowę."</string>
 </resources>

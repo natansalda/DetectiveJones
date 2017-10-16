@@ -34,12 +34,15 @@ public class ProofsActivity extends AppCompatActivity {
 
         // Create a list of proofs
         ArrayList<Dialog> proofsData = new ArrayList<Dialog>();
-        proofsData.add(new Dialog(R.drawable.fingerprint, "Fingerprint", "Fingerprint found on the statue head."));
-        proofsData.add(new Dialog(R.drawable.statue_head, "Destroyed statue", "This is a statue with head detached. It looks suspicious.When you come closer you see something read close to the angel ear. Is it blood?"));
-        proofsData.add(new Dialog(R.drawable.notebook, "Notebook", "This is a Katy's notebook. Looks like she has a stalker."));
+        proofsData.add(new Dialog(R.drawable.fingerprint, getString(R.string.fingerprint), getString(R.string.fingerprint_title)));
+        proofsData.add(new Dialog(R.drawable.statue_head, getString(R.string.statue), getString(R.string.statue_title)));
+        //"This is a statue with head detached. It looks suspicious.When you come closer you see something read close to the angel ear. Is it blood?"
+        proofsData.add(new Dialog(R.drawable.notebook, getString(R.string.notebook), getString(R.string.notebook_title)));
+        //Looks like she has a stalker.
 
         adapter = new DialogAdapter(ProofsActivity.this, proofsData);
         listView.setAdapter(adapter);
+
 
     }
 }

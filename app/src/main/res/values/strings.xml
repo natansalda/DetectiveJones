@@ -40,4 +40,10 @@
     <string name="murderer_name">Murderer name:</string>
     <string name="name_dialog">Name</string>
     <string name="text_dialog">This is a dialog box. Everthing the person says is here.</string>
+    <string name="fingerprint">Fingerprint</string>
+    <string name="statue">Destroyed statue</string>
+    <string name="notebook">Notebook</string>
+    <string name="fingerprint_title">Fingerprint found on the statue head.</string>
+    <string name="statue_title">This is a statue with head detached.</string>
+    <string name="notebook_title">This is a Katy\'s notebook.</string>
 </resources>
