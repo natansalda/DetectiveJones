@@ -91,14 +91,16 @@ public class StoryActivity extends AppCompatActivity {
         //TODO: open new activity
     }
 
-    //This will prevent accidentally leaving the application
+    //This will prevent accidentaly leaving the application
     boolean doubleBackToExitPressedOnce = false;
 
     @Override
     public void onBackPressed() {
         if (doubleBackToExitPressedOnce) {
-            super.onBackPressed();
-            return;
+            Intent intent = new Intent(Intent.ACTION_MAIN);
+            intent.addCategory(Intent.CATEGORY_HOME);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
         }
         this.doubleBackToExitPressedOnce = true;
         Toast.makeText(this, R.string.back_twice, Toast.LENGTH_SHORT).show();

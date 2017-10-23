@@ -161,8 +161,10 @@ public class ChooseplayerActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         if (doubleBackToExitPressedOnce) {
-            super.onBackPressed();
-            return;
+            Intent intent = new Intent(Intent.ACTION_MAIN);
+            intent.addCategory(Intent.CATEGORY_HOME);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
         }
         this.doubleBackToExitPressedOnce = true;
         Toast.makeText(this, R.string.back_twice, Toast.LENGTH_SHORT).show();
