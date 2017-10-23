@@ -10,6 +10,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.StringTokenizer;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -20,6 +21,7 @@ public class JonesActivity extends AppCompatActivity {
 
     private DialogAdapter adapter;
     private ListView listView;
+    private String schoolDescription;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,10 +45,10 @@ public class JonesActivity extends AppCompatActivity {
 
         // Create a dialog with Jones
         ArrayList<Dialog> talkJonesData = new ArrayList<Dialog>();
-        talkJonesData.add(new Dialog(R.drawable.detective, getString(R.string.name_Jones), getString(R.string.fingerprint_title)));
-        talkJonesData.add(new Dialog(playerFace, name, getString(R.string.statue_title)));
-        talkJonesData.add(new Dialog(R.drawable.detective, getString(R.string.name_Jones), getString(R.string.notebook_title)));
-        talkJonesData.add(new Dialog(playerFace, name, getString(R.string.statue_title)));
+        talkJonesData.add(new Dialog(R.drawable.detective, getString(R.string.name_Jones), "Ugh, did no one teach you to knock? What do you want?"));
+        talkJonesData.add(new Dialog(playerFace, name, "Good morning Detective Jones...Well, my name is " + name + " and I am your new partner at work. They say you are the best so I hope to learn a lot from you."));
+        talkJonesData.add(new Dialog(R.drawable.detective, getString(R.string.name_Jones), "Of course I am the best! I just wonder why in return I need to work with kids from kindergarten! Did you at least study something?"));
+        talkJonesData.add(new Dialog(playerFace, name, "Well actually I just finished " + school + ", so I believe I can be a valuable addition to you resources."));
 
         adapter = new DialogAdapter(JonesActivity.this, talkJonesData);
         listView.setAdapter(adapter);
