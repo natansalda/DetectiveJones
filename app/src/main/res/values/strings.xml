@@ -46,4 +46,5 @@
     <string name="fingerprint_title">Fingerprint found on the statue head.</string>
     <string name="statue_title">This is a statue with head detached.</string>
     <string name="notebook_title">This is a Katy\'s notebook.</string>
+    <string name="name_Jones">Detective Jones</string>
 </resources>

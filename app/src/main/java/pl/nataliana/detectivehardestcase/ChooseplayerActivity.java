@@ -85,7 +85,7 @@ public class ChooseplayerActivity extends AppCompatActivity {
             public void onClick(View v) {
                 woman_img.setImageResource(R.drawable.player_face_f_selected);
                 man_img.setImageResource(R.drawable.player_face_m);
-                playerFace = 5;
+                playerFace = R.drawable.player_face_f;
             }
         });
 
@@ -95,7 +95,7 @@ public class ChooseplayerActivity extends AppCompatActivity {
             public void onClick(View v) {
                 man_img.setImageResource(R.drawable.player_face_m_selected);
                 woman_img.setImageResource(R.drawable.player_face_f);
-                playerFace = 10;
+                playerFace = R.drawable.player_face_m;
             }
         });
     }

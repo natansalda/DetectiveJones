@@ -53,7 +53,7 @@ public class StoryActivity extends AppCompatActivity {
         String name = extras.getString(NAME);
         int score = extras.getInt("score");
         String school = extras.getString("school");
-        int playerFace = extras.getInt("playerFace");
+        int playerFace = extras.getInt("facePic");
 
         //Set text to what_to_do_txt
         mainMessage = getString(R.string.what_to_do) + " " + name + "?";

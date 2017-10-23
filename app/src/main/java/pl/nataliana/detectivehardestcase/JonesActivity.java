@@ -1,5 +1,6 @@
 package pl.nataliana.detectivehardestcase;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -30,17 +31,24 @@ public class JonesActivity extends AppCompatActivity {
         setContentView(R.layout.dialog_list);
         ButterKnife.bind(this);
 
+        //Get intents from previous activity
+        Intent intent = getIntent();
+        Bundle extras = intent.getExtras();
+        String name = extras.getString(NAME);
+        int score = extras.getInt("score");
+        String school = extras.getString("school");
+        int playerFace = extras.getInt("facePic");
+
         listView = (ListView) findViewById(R.id.list);
 
         // Create a dialog with Jones
-        ArrayList<Dialog> proofsData = new ArrayList<Dialog>();
-        proofsData.add(new Dialog(R.drawable.fingerprint, getString(R.string.fingerprint), getString(R.string.fingerprint_title)));
-        proofsData.add(new Dialog(R.drawable.statue_head, getString(R.string.statue), getString(R.string.statue_title)));
-        //"This is a statue with head detached. It looks suspicious.When you come closer you see something read close to the angel ear. Is it blood?"
-        proofsData.add(new Dialog(R.drawable.notebook, getString(R.string.notebook), getString(R.string.notebook_title)));
-        //Looks like she has a stalker.
+        ArrayList<Dialog> talkJonesData = new ArrayList<Dialog>();
+        talkJonesData.add(new Dialog(R.drawable.detective, getString(R.string.name_Jones), getString(R.string.fingerprint_title)));
+        talkJonesData.add(new Dialog(playerFace, name, getString(R.string.statue_title)));
+        talkJonesData.add(new Dialog(R.drawable.detective, getString(R.string.name_Jones), getString(R.string.notebook_title)));
+        talkJonesData.add(new Dialog(playerFace, name, getString(R.string.statue_title)));
 
-        adapter = new DialogAdapter(JonesActivity.this, proofsData);
+        adapter = new DialogAdapter(JonesActivity.this, talkJonesData);
         listView.setAdapter(adapter);
 
 
