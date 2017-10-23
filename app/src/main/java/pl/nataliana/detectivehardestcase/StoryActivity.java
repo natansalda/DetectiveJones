@@ -65,8 +65,9 @@ public class StoryActivity extends AppCompatActivity {
     }
 
     public void talkWithJones(View view) {
-        Toast.makeText(StoryActivity.this, R.string.soon, Toast.LENGTH_SHORT).show();
-        //TODO: open new activity
+        Intent c = new Intent(StoryActivity.this, JonesActivity.class);
+        c.putExtras(getIntent().getExtras());
+        startActivity(c);
     }
 
     public void talkToWitness(View view) {
