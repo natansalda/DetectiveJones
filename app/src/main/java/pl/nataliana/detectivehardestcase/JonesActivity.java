@@ -1,10 +1,14 @@
 package pl.nataliana.detectivehardestcase;
 
+import android.content.ContentUris;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -42,6 +46,16 @@ public class JonesActivity extends AppCompatActivity {
         int playerFace = extras.getInt("facePic");
 
         listView = (ListView) findViewById(R.id.list);
+
+//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+//                Intent intent = new Intent(MainActivity.this, StoreActivity.class);
+//                Uri currentPetUri = ContentUris.withAppendedId(ProductEntry.CONTENT_URI, id);
+//                intent.setData(currentPetUri);
+//                startActivity(intent);
+//            }
+//        });
 
         // Create a dialog with Jones
         ArrayList<Dialog> talkJonesData = new ArrayList<Dialog>();
