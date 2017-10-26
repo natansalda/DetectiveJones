@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/RelativeDefault"
@@ -11,6 +11,20 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
+    <RelativeLayout
+        android:id="@+id/empty_view"
+        style="@style/RelativeDefault">
 
+        <ImageView
+            android:id="@+id/foto_empty_view"
+            style="@style/ImageEmptyView" />
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/texto_empty_view"
+            style="@style/TextEmptyView"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
