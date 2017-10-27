@@ -73,7 +73,5 @@ public class JonesActivity extends AppCompatActivity {
 
             }
         });
-
-
     }
 }
