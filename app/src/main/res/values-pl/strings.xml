@@ -47,4 +47,7 @@
     <string name="notebook_title">To jest pamiętnik Katy</string>
     <string name="statue">Zniszczony pomnik</string>
     <string name="statue_title">"Ten pomnik ma oderwaną głowę."</string>
+    <string name="door_description">Obrazek drzwi</string>
+    <string name="name_Jones">Detektyw Jones</string>
+    <string name="tap">Dotknij ekranu aby otworzyć drzwi</string>
 </resources>

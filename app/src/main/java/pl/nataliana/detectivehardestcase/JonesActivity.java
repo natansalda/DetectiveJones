@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -47,26 +48,20 @@ public class JonesActivity extends AppCompatActivity {
 
         listView = (ListView) findViewById(R.id.list);
 
-//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-//                Intent intent = new Intent(MainActivity.this, StoreActivity.class);
-//                Uri currentPetUri = ContentUris.withAppendedId(ProductEntry.CONTENT_URI, id);
-//                intent.setData(currentPetUri);
-//                startActivity(intent);
-//            }
-//        });
+        //set empty view when dialog list is empty
+        View emptyView = findViewById(R.id.empty_view);
+        listView.setEmptyView(emptyView);
 
-        // Create a dialog with Jones
-        ArrayList<Dialog> talkJonesData = new ArrayList<Dialog>();
-        talkJonesData.add(new Dialog(R.drawable.detective, getString(R.string.name_Jones), "Ugh, did no one teach you to knock? What do you want?"));
-        talkJonesData.add(new Dialog(playerFace, name, "Good morning Detective Jones...Well, my name is " + name + " and I am your new partner at work. They say you are the best so I hope to learn a lot from you."));
-        talkJonesData.add(new Dialog(R.drawable.detective, getString(R.string.name_Jones), "Of course I am the best! I just wonder why in return I need to work with kids from kindergarten! Did you at least study something?"));
-        talkJonesData.add(new Dialog(playerFace, name, "Well actually I just finished " + school + ", so I believe I can be a valuable addition to you resources."));
+//        // Set up an adapter to create a dialog list. There is no dialog yet so it passes in null.
+//        adapter = new DialogAdapter(JonesActivity.this, null);
+//        listView.setAdapter(adapter);
 
-        adapter = new DialogAdapter(JonesActivity.this, talkJonesData);
-        listView.setAdapter(adapter);
-
+//        // Create a dialog with Jones
+//        ArrayList<Dialog> talkJonesData = new ArrayList<Dialog>();
+//        talkJonesData.add(new Dialog(R.drawable.detective, getString(R.string.name_Jones), "Ugh, did no one teach you to knock? What do you want?"));
+//        talkJonesData.add(new Dialog(playerFace, name, "Good morning Detective Jones...Well, my name is " + name + " and I am your new partner at work. They say you are the best so I hope to learn a lot from you."));
+//        talkJonesData.add(new Dialog(R.drawable.detective, getString(R.string.name_Jones), "Of course I am the best! I just wonder why in return I need to work with kids from kindergarten! Did you at least study something?"));
+//        talkJonesData.add(new Dialog(playerFace, name, "Well actually I just finished " + school + ", so I believe I can be a valuable addition to you resources."));
 
     }
 }

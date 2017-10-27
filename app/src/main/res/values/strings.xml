@@ -39,7 +39,7 @@
     <string name="main_menu">Main menu</string>
     <string name="murderer_name">Murderer name:</string>
     <string name="name_dialog">Name</string>
-    <string name="text_dialog">This is a dialog box. Everthing the person says is here.</string>
+    <string name="text_dialog" translatable="false">This is a dialog box. Everthing the person says is here.</string>
     <string name="fingerprint">Fingerprint</string>
     <string name="statue">Destroyed statue</string>
     <string name="notebook">Notebook</string>
@@ -48,4 +48,5 @@
     <string name="notebook_title">This is a Katy\'s notebook.</string>
     <string name="name_Jones">Detective Jones</string>
     <string name="door_description">Image of a door</string>
+    <string name="tap">Tap the screen to open the door</string>
 </resources>
