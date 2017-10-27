@@ -49,5 +49,11 @@
     <string name="statue_title">"Ten pomnik ma oderwaną głowę."</string>
     <string name="door_description">Obrazek drzwi</string>
     <string name="name_Jones">Detektyw Jones</string>
-    <string name="tap">Dotknij ekranu aby otworzyć drzwi</string>
+    <string name="tap">Dotknij drzwi by je otworzyć</string>
+    <string name="j1">"Hej, nikt cię nie nauczył pukać? Czego chcesz? "</string>
+    <string name="j2">"Oczywiście, że jestem najlepszy! Zastanawiam się tylko, dlaczego w nagrodę muszę pracować z dzieciakami z przedszkola. Pewnie nawet studiów nie masz? "</string>
+    <string name="p1a">Dzień dobry detektywie...Cóż, mam na imię</string>
+    <string name="p1b">"i będziemy razem pracować. Podobno jest pan najlepszy, mam więc nadzieję, wiele się od pana nauczyć. "</string>
+    <string name="p2a">W swoje CV mogę wpisać</string>
+    <string name="p2b">"tak więc wydaje mi się, że będę dla pana cennym nabytkiem. "</string>
 </resources>

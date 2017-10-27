@@ -24,6 +24,9 @@ import static pl.nataliana.detectivehardestcase.ChooseplayerActivity.NAME;
 
 public class JonesActivity extends AppCompatActivity {
 
+    @BindView(R.id.foto_empty_view)
+    ImageView door;
+
     private DialogAdapter adapter;
     private ListView listView;
     private String schoolDescription;
@@ -41,27 +44,36 @@ public class JonesActivity extends AppCompatActivity {
         //Get intents from previous activity
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
-        String name = extras.getString(NAME);
+        final String name = extras.getString(NAME);
         int score = extras.getInt("score");
-        String school = extras.getString("school");
-        int playerFace = extras.getInt("facePic");
+        final String school = extras.getString("school");
+        final int playerFace = extras.getInt("facePic");
 
         listView = (ListView) findViewById(R.id.list);
 
-        //set empty view when dialog list is empty
+        //Set empty view when dialog list is empty
         View emptyView = findViewById(R.id.empty_view);
         listView.setEmptyView(emptyView);
 
-//        // Set up an adapter to create a dialog list. There is no dialog yet so it passes in null.
-//        adapter = new DialogAdapter(JonesActivity.this, null);
-//        listView.setAdapter(adapter);
+        //Set on click listener when player clicks on listView
+        door.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
-//        // Create a dialog with Jones
-//        ArrayList<Dialog> talkJonesData = new ArrayList<Dialog>();
-//        talkJonesData.add(new Dialog(R.drawable.detective, getString(R.string.name_Jones), "Ugh, did no one teach you to knock? What do you want?"));
-//        talkJonesData.add(new Dialog(playerFace, name, "Good morning Detective Jones...Well, my name is " + name + " and I am your new partner at work. They say you are the best so I hope to learn a lot from you."));
-//        talkJonesData.add(new Dialog(R.drawable.detective, getString(R.string.name_Jones), "Of course I am the best! I just wonder why in return I need to work with kids from kindergarten! Did you at least study something?"));
-//        talkJonesData.add(new Dialog(playerFace, name, "Well actually I just finished " + school + ", so I believe I can be a valuable addition to you resources."));
+                // Create a dialog with Jones
+                ArrayList<Dialog> talkJonesData = new ArrayList<Dialog>();
+                talkJonesData.add(new Dialog(R.drawable.detective, getString(R.string.name_Jones), getString(R.string.j1)));
+                talkJonesData.add(new Dialog(playerFace, name, getString(R.string.p1a) + name + getString(R.string.p1b)));
+                talkJonesData.add(new Dialog(R.drawable.detective, getString(R.string.name_Jones), getString(R.string.j2)));
+                talkJonesData.add(new Dialog(playerFace, name, getString(R.string.p2a) + school + getString(R.string.p2b)));
+
+                // Set up an adapter to a dialog list. There is no dialog yet so it passes in null.
+                adapter = new DialogAdapter(JonesActivity.this, talkJonesData);
+                listView.setAdapter(adapter);
+
+            }
+        });
+
 
     }
 }
