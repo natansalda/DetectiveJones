@@ -63,9 +63,10 @@ public class JonesActivity extends AppCompatActivity {
                 // Create a dialog with Jones
                 ArrayList<Dialog> talkJonesData = new ArrayList<Dialog>();
                 talkJonesData.add(new Dialog(R.drawable.detective, getString(R.string.name_Jones), getString(R.string.j1)));
-                talkJonesData.add(new Dialog(playerFace, name, getString(R.string.p1a) + name + getString(R.string.p1b)));
-                talkJonesData.add(new Dialog(R.drawable.detective, getString(R.string.name_Jones), getString(R.string.j2)));
-                talkJonesData.add(new Dialog(playerFace, name, getString(R.string.p2a) + school + getString(R.string.p2b)));
+
+//                talkJonesData.add(new Dialog(playerFace, name, getString(R.string.p1a) + name + getString(R.string.p1b)));
+//                talkJonesData.add(new Dialog(R.drawable.detective, getString(R.string.name_Jones), getString(R.string.j2)));
+//                talkJonesData.add(new Dialog(playerFace, name, getString(R.string.p2a) + school + getString(R.string.p2b)));
 
                 // Set up an adapter to a dialog list. There is no dialog yet so it passes in null.
                 adapter = new DialogAdapter(JonesActivity.this, talkJonesData);

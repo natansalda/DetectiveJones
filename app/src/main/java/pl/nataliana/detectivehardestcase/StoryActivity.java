@@ -107,5 +107,4 @@ public class StoryActivity extends AppCompatActivity {
         Toast.makeText(this, R.string.back_twice, Toast.LENGTH_SHORT).show();
     }
 
-
 }

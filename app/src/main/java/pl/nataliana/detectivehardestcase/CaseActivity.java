@@ -44,8 +44,6 @@ public class CaseActivity extends AppCompatActivity {
     TextView murderer_name_title;
     @BindView(R.id.murderer_name)
     TextView murderer_name;
-    @BindView(R.id.back_to_story)
-    TextView back_to_story;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,26 +55,4 @@ public class CaseActivity extends AppCompatActivity {
         setContentView(R.layout.activity_case);
         ButterKnife.bind(this);
 }
-
-    @OnClick(R.id.back_to_story)
-    public void backToStory(View view) {
-        Intent s = new Intent(CaseActivity.this, StoryActivity.class);
-        s.putExtras(getIntent().getExtras());
-        startActivity(s);
-    }
-
-    //This will prevent accidentaly leaving the application
-    boolean doubleBackToExitPressedOnce = false;
-
-    @Override
-    public void onBackPressed() {
-        if (doubleBackToExitPressedOnce) {
-            Intent intent = new Intent(Intent.ACTION_MAIN);
-            intent.addCategory(Intent.CATEGORY_HOME);
-            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            startActivity(intent);
-        }
-        this.doubleBackToExitPressedOnce = true;
-        Toast.makeText(this, R.string.back_twice, Toast.LENGTH_SHORT).show();
-    }
 }
