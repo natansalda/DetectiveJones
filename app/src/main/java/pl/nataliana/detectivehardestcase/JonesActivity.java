@@ -1,35 +1,36 @@
 package pl.nataliana.detectivehardestcase;
 
-import android.content.ContentUris;
-import android.content.Intent;
-import android.graphics.drawable.Drawable;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.AdapterView;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.ListView;
-import android.widget.TextView;
 
 import java.util.ArrayList;
-import java.util.StringTokenizer;
+import java.util.Stack;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import pl.nataliana.detectivehardestcase.adapters.DialogsAdapter;
 
 import static pl.nataliana.detectivehardestcase.ChooseplayerActivity.NAME;
 
 public class JonesActivity extends AppCompatActivity {
 
-    @BindView(R.id.foto_empty_view)
-    ImageView door;
+    @BindView(R.id.empty_view)
+    View emptyView;
 
-    private DialogAdapter adapter;
-    private ListView listView;
+    @BindView(R.id.list)
+    RecyclerView recyclerView;
+
+    @BindView(R.id.speak)
+    View speakView;
+
+    private DialogsAdapter adapter;
     private String schoolDescription;
+
+    private Stack<Dialog> allDialogs = new Stack<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,38 +42,59 @@ public class JonesActivity extends AppCompatActivity {
         setContentView(R.layout.dialog_list);
         ButterKnife.bind(this);
 
-        //Get intents from previous activity
-        Intent intent = getIntent();
-        Bundle extras = intent.getExtras();
+        prepareDialogs();
+
+        //Set on click listener when player clicks on listView
+        emptyView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                recyclerView.setVisibility(View.VISIBLE);
+                speakView.setVisibility(View.VISIBLE);
+                emptyView.setVisibility(View.GONE);
+
+                // Create a dialog with Jones
+                ArrayList<Dialog> talkJonesData = new ArrayList<Dialog>();
+                talkJonesData.add(allDialogs.pop());
+
+                // Set up an adapter to a dialog list. There is no dialog yet so it passes in null.
+                adapter = new DialogsAdapter(talkJonesData);
+                recyclerView.setAdapter(adapter);
+                recyclerView.setLayoutManager(new LinearLayoutManager(getBaseContext()));
+            }
+        });
+
+        speakView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (!allDialogs.isEmpty()) {
+                    adapter.addDialog(allDialogs.pop());
+                }
+            }
+        });
+
+    }
+
+    private void prepareDialogs() {
+        Bundle extras = getIntent().getExtras();
         final String name = extras.getString(NAME);
         int score = extras.getInt("score");
         final String school = extras.getString("school");
         final int playerFace = extras.getInt("facePic");
 
-        listView = (ListView) findViewById(R.id.list);
+        allDialogs.push(new Dialog(playerFace, name, getString(R.string.p2a) + school + getString(R.string.p2b)));
+        allDialogs.push(new Dialog(R.drawable.detective, getString(R.string.name_Jones), getString(R.string.j2)));
+        allDialogs.push(new Dialog(playerFace, name, getString(R.string.p1a) + name + getString(R.string.p1b)));
+        allDialogs.push(new Dialog(R.drawable.detective, getString(R.string.name_Jones), getString(R.string.j1)));
 
-        //Set empty view when dialog list is empty
-        View emptyView = findViewById(R.id.empty_view);
-        listView.setEmptyView(emptyView);
+        //Replicated dialogs for testing purpose
+        allDialogs.push(new Dialog(playerFace, name, getString(R.string.p2a) + school + getString(R.string.p2b)));
+        allDialogs.push(new Dialog(R.drawable.detective, getString(R.string.name_Jones), getString(R.string.j2)));
+        allDialogs.push(new Dialog(playerFace, name, getString(R.string.p1a) + name + getString(R.string.p1b)));
+        allDialogs.push(new Dialog(R.drawable.detective, getString(R.string.name_Jones), getString(R.string.j1)));
 
-        //Set on click listener when player clicks on listView
-        door.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                // Create a dialog with Jones
-                ArrayList<Dialog> talkJonesData = new ArrayList<Dialog>();
-                talkJonesData.add(new Dialog(R.drawable.detective, getString(R.string.name_Jones), getString(R.string.j1)));
-
-//                talkJonesData.add(new Dialog(playerFace, name, getString(R.string.p1a) + name + getString(R.string.p1b)));
-//                talkJonesData.add(new Dialog(R.drawable.detective, getString(R.string.name_Jones), getString(R.string.j2)));
-//                talkJonesData.add(new Dialog(playerFace, name, getString(R.string.p2a) + school + getString(R.string.p2b)));
-
-                // Set up an adapter to a dialog list. There is no dialog yet so it passes in null.
-                adapter = new DialogAdapter(JonesActivity.this, talkJonesData);
-                listView.setAdapter(adapter);
-
-            }
-        });
+        allDialogs.push(new Dialog(playerFace, name, getString(R.string.p2a) + school + getString(R.string.p2b)));
+        allDialogs.push(new Dialog(R.drawable.detective, getString(R.string.name_Jones), getString(R.string.j2)));
+        allDialogs.push(new Dialog(playerFace, name, getString(R.string.p1a) + name + getString(R.string.p1b)));
+        allDialogs.push(new Dialog(R.drawable.detective, getString(R.string.name_Jones), getString(R.string.j1)));
     }
 }
