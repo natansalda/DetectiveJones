@@ -83,18 +83,8 @@ public class JonesActivity extends AppCompatActivity {
 
         allDialogs.push(new Dialog(playerFace, name, getString(R.string.p2a) + school + getString(R.string.p2b)));
         allDialogs.push(new Dialog(R.drawable.detective, getString(R.string.name_Jones), getString(R.string.j2)));
-        allDialogs.push(new Dialog(playerFace, name, getString(R.string.p1a) + name + getString(R.string.p1b)));
+        allDialogs.push(new Dialog(playerFace, name, getString(R.string.p1a) + " " + name + " " + getString(R.string.p1b)));
         allDialogs.push(new Dialog(R.drawable.detective, getString(R.string.name_Jones), getString(R.string.j1)));
 
-        //Replicated dialogs for testing purpose
-        allDialogs.push(new Dialog(playerFace, name, getString(R.string.p2a) + school + getString(R.string.p2b)));
-        allDialogs.push(new Dialog(R.drawable.detective, getString(R.string.name_Jones), getString(R.string.j2)));
-        allDialogs.push(new Dialog(playerFace, name, getString(R.string.p1a) + name + getString(R.string.p1b)));
-        allDialogs.push(new Dialog(R.drawable.detective, getString(R.string.name_Jones), getString(R.string.j1)));
-
-        allDialogs.push(new Dialog(playerFace, name, getString(R.string.p2a) + school + getString(R.string.p2b)));
-        allDialogs.push(new Dialog(R.drawable.detective, getString(R.string.name_Jones), getString(R.string.j2)));
-        allDialogs.push(new Dialog(playerFace, name, getString(R.string.p1a) + name + getString(R.string.p1b)));
-        allDialogs.push(new Dialog(R.drawable.detective, getString(R.string.name_Jones), getString(R.string.j1)));
     }
 }
