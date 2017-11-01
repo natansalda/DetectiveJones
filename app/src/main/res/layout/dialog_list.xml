@@ -17,7 +17,7 @@
     <TextView
         android:id="@+id/speak"
         android:text="@string/tap_the_screen_to_talk"
-        android:background="@color/colorPrimary"
+        android:background="@color/black"
         android:padding="8dp"
         android:visibility="gone"
         android:layout_height="wrap_content"
