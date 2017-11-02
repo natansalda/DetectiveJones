@@ -22,8 +22,6 @@ public class StoryActivity extends AppCompatActivity {
     public String currentScore;
     @BindView(R.id.what_to_do_txt)
     TextView what_to_do_txt;
-    @BindView(R.id.score)
-    TextView score_tv;
     @BindView(R.id.talk_jones)
     ImageView talk_jones;
     @BindView(R.id.talk_witness)
@@ -34,8 +32,6 @@ public class StoryActivity extends AppCompatActivity {
     ImageView see_proofs;
     @BindView(R.id.solve_case)
     ImageView solve_case;
-    //This variable will count the score in the game
-    public int score;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +47,6 @@ public class StoryActivity extends AppCompatActivity {
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
         String name = extras.getString(NAME);
-        int score = extras.getInt("score");
         String school = extras.getString("school");
         int playerFace = extras.getInt("facePic");
 
@@ -59,9 +54,6 @@ public class StoryActivity extends AppCompatActivity {
         mainMessage = getString(R.string.what_to_do) + " " + name + "?";
         what_to_do_txt.setText(mainMessage);
 
-        //Set text to score_tv
-        currentScore = getString(R.string.your_score) + score;
-        score_tv.setText(currentScore);
     }
 
     public void talkWithJones(View view) {

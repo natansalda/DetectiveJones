@@ -77,7 +77,6 @@ public class JonesActivity extends AppCompatActivity {
     private void prepareDialogs() {
         Bundle extras = getIntent().getExtras();
         final String name = extras.getString(NAME);
-        int score = extras.getInt("score");
         final String school = extras.getString("school");
         final int playerFace = extras.getInt("facePic");
 

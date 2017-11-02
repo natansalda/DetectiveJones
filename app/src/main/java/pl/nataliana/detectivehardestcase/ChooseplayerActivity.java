@@ -103,22 +103,16 @@ public class ChooseplayerActivity extends AppCompatActivity {
     //this method is called when the user chooses 1st school
     public void clickSchool1(View view) {
         school = getString(R.string.school1);
-        score = 20;
-
     }
 
     //this method is called when the user chooses 2nd school
     public void clickSchool2(View view) {
         school = getString(R.string.school2);
-        score = 50;
-
     }
 
     //this method is called when the user chooses 3rd school
     public void clickSchool3(View view) {
         school = getString(R.string.school3);
-        score = 10;
-
     }
 
     //this method is called when the user clicks "done" button
@@ -129,7 +123,6 @@ public class ChooseplayerActivity extends AppCompatActivity {
         extras.putString(NAME, name);
         extras.putString("school", school);
         extras.putInt("facePic", playerFace);
-        extras.putInt("score", score);
         i.putExtras(extras);
         finish();
         startActivity(i);
