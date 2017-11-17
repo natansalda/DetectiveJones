@@ -10,9 +10,9 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class DialogAdapter extends ArrayAdapter<Dialog> {
+public class ProofAdapter extends ArrayAdapter<Dialog> {
 
-    public DialogAdapter(Context context, ArrayList<Dialog> proofsData) {
+    public ProofAdapter(Context context, ArrayList<Dialog> proofsData) {
         super(context, 0, proofsData);
     }
 

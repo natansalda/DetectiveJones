@@ -15,12 +15,13 @@ import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import pl.nataliana.detectivehardestcase.adapters.DialogsAdapter;
 
 import static pl.nataliana.detectivehardestcase.ChooseplayerActivity.NAME;
 
 public class ProofsActivity extends AppCompatActivity {
 
-    private DialogAdapter adapter;
+    private pl.nataliana.detectivehardestcase.ProofAdapter adapter;
     private ListView listView;
 
     @Override
@@ -43,7 +44,7 @@ public class ProofsActivity extends AppCompatActivity {
         proofsData.add(new Dialog(R.drawable.notebook, getString(R.string.notebook), getString(R.string.notebook_title)));
         //Looks like she has a stalker.
 
-        adapter = new DialogAdapter(ProofsActivity.this, proofsData);
+        adapter = new pl.nataliana.detectivehardestcase.ProofAdapter(ProofsActivity.this, proofsData);
         listView.setAdapter(adapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
