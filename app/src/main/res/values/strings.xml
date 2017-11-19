@@ -50,10 +50,8 @@
     <string name="door_description">Image of a door</string>
     <string name="tap">Tap the door to open it</string>
     <string name="j1">Ugh, did no one teach you to knock? What do you want?</string>
-    <string name="p1a">Good morning Detective Jones...Well, my name is</string>
-    <string name="p1b">and I am your new partner at work. They say you are the best so I hope to learn a lot from you.</string>
+    <string name="p1">Good morning Detective Jones!Well, my name is %1$s and I am your new partner at work. They say you are the best so I hope to learn a lot from you.</string>
     <string name="j2">Of course I am the best! I just wonder why in return I need to work with kids from kindergarten! Did you at least study something?</string>
-    <string name="p2a">Well actually I just finished</string>
-    <string name="p2b">, so I believe I can be a valuable addition to you resources.</string>
+    <string name="p2">Well actually I just finished %1$s, so I believe I can be a valuable addition to you resources.</string>
     <string name="tap_the_screen_to_talk">Tap here to continue</string>
 </resources>

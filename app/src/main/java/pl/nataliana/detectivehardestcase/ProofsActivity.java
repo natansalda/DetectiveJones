@@ -21,7 +21,7 @@ import static pl.nataliana.detectivehardestcase.ChooseplayerActivity.NAME;
 
 public class ProofsActivity extends AppCompatActivity {
 
-    private pl.nataliana.detectivehardestcase.ProofAdapter adapter;
+    private pl.nataliana.detectivehardestcase.adapters.ProofAdapter adapter;
     private ListView listView;
 
     @Override
@@ -44,13 +44,15 @@ public class ProofsActivity extends AppCompatActivity {
         proofsData.add(new Dialog(R.drawable.notebook, getString(R.string.notebook), getString(R.string.notebook_title)));
         //Looks like she has a stalker.
 
-        adapter = new pl.nataliana.detectivehardestcase.ProofAdapter(ProofsActivity.this, proofsData);
+        adapter = new pl.nataliana.detectivehardestcase.adapters.ProofAdapter(ProofsActivity.this, proofsData);
         listView.setAdapter(adapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-
+            @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Dialog dialog = proofsData.get(position);
                 Intent intent = new Intent(ProofsActivity.this, ProofsDetailsActivity.class);
+                startActivity(intent);
             }
         });
 

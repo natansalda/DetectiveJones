@@ -1,5 +1,7 @@
 package pl.nataliana.detectivehardestcase;
 
+import android.annotation.SuppressLint;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -80,10 +82,9 @@ public class JonesActivity extends AppCompatActivity {
         final String school = extras.getString("school");
         final int playerFace = extras.getInt("facePic");
 
-        allDialogs.push(new Dialog(playerFace, name, getString(R.string.p2a) + " " + school + getString(R.string.p2b)));
+        allDialogs.push(new Dialog(playerFace, name, getString(R.string.p2a, school)));
         allDialogs.push(new Dialog(R.drawable.detective, getString(R.string.name_Jones), getString(R.string.j2)));
-        allDialogs.push(new Dialog(playerFace, name, getString(R.string.p1a) + " " + name + " " + getString(R.string.p1b)));
+        allDialogs.push(new Dialog(playerFace, name, getString(R.string.p1, name)));
         allDialogs.push(new Dialog(R.drawable.detective, getString(R.string.name_Jones), getString(R.string.j1)));
-
     }
 }

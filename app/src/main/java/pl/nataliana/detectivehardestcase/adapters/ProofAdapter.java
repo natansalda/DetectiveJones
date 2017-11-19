@@ -1,4 +1,4 @@
-package pl.nataliana.detectivehardestcase;
+package pl.nataliana.detectivehardestcase.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,6 +9,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+
+import pl.nataliana.detectivehardestcase.Dialog;
+import pl.nataliana.detectivehardestcase.R;
 
 public class ProofAdapter extends ArrayAdapter<Dialog> {
 
