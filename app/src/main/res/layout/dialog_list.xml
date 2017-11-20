@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                style="@style/RelativeDefault"
-                android:background="@color/grey"
-                android:orientation="vertical">
+    style="@style/RelativeDefault"
+    android:background="@color/grey"
+    android:orientation="vertical"
+    android:paddingBottom="16dp">
 
 
     <android.support.v7.widget.RecyclerView
@@ -16,14 +17,14 @@
 
     <TextView
         android:id="@+id/speak"
-        android:text="@string/tap_the_screen_to_talk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:background="@color/colorPrimaryDark"
         android:padding="8dp"
-        android:visibility="gone"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:layout_alignParentBottom="true"
-        android:textColor="@color/white"/>
+        android:text="@string/tap_the_screen_to_talk"
+        android:textColor="@color/white"
+        android:visibility="gone" />
 
     <RelativeLayout
         android:id="@+id/empty_view"
@@ -32,13 +33,13 @@
 
         <ImageView
             android:id="@+id/foto_empty_view"
-            style="@style/ImageEmptyView"/>
+            style="@style/ImageEmptyView" />
 
         <TextView
             android:id="@+id/texto_empty_view"
             style="@style/TextEmptyView"
             android:layout_centerHorizontal="true"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white" />
 
     </RelativeLayout>
 

@@ -63,7 +63,6 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginRight="50dp"
-                android:onClick="imageChoosen"
                 android:src="@drawable/player_face_f" />
 
             <ImageView
@@ -71,7 +70,6 @@
                 style="@style/Image"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:onClick="imageChoosen"
                 android:src="@drawable/player_face_m" />
 
         </LinearLayout>

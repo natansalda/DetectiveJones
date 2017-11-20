@@ -57,4 +57,11 @@
     <string name="no_proofs">You didn\'t find any proofs yet.</string>
     <string name="j3">Yeah, well we\'ll see about it. For now make yourself useful and search the murder scene. There may be some useful proofs waiting for us to be find. Oh, and don\'t forget to read the case files carefully!</string>
     <string name="p3">I\'m on it Detective Jones!</string>
+    <string name="choose_scene">Choose the scene you want to search</string>
+    <string name="park_title">Crime scene - the Park</string>
+    <string name="park_description">This is where Katy has been found dead</string>
+    <string name="room_title">Katy\'s room</string>
+    <string name="room_description">This is the room in a dormitory, where Katy and her roommate lived</string>
+    <string name="laboratory_title">The university - laboratory</string>
+    <string name="laboratory_description">This is the laboratory at the New York University, where Katy has been spending a lot of time on her reasearch.</string>
 </resources>
