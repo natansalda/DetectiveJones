@@ -55,4 +55,7 @@
     <string name="p1">Dzień dobry detektywie! Cóż, mam na imię %1$s i będziemy razem pracować. Podobno jest pan najlepszy, mam więc nadzieję, wiele się od pana nauczyć. </string>
     <string name="p2">W swoje CV mogę wpisać %1$s tak więc wydaje mi się, że będę dla pana cennym nabytkiem.</string>
     <string name="tap_the_screen_to_talk">Kliknij tu aby kontynuować</string>
+    <string name="no_proofs">Nie znaleziono jeszcze żadnych dowodów.</string>
+    <string name="j3">No cóż, to się jeszcze okaże. Tymczasem postaraj się do czegoś przydać i idź przeszukać scene zbrodni. Może tam być kilka ciekawych dowdów, które czekają, żebyśmy je znaleźli. A i jeszcze jedno - nie zapomnij dokładnie zapoznać się z aktami sprawy!</string>
+    <string name="p3">Już się robi detektywie Jones!</string>
 </resources>
