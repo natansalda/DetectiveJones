@@ -1,5 +1,6 @@
 package pl.nataliana.detectivehardestcase;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.WindowManager;
@@ -18,5 +19,6 @@ public class ProofsDetailsActivity extends AppCompatActivity {
         //Bind the view with a layout
         setContentView(R.layout.proof_card);
         ButterKnife.bind(this);
+
     }
 }

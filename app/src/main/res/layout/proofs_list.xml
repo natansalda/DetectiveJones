@@ -9,6 +9,26 @@
     <ListView
         android:id="@+id/list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/foto_empty_view"
+            style="@style/ImageEmptyView"
+            android:src="@drawable/ask_icon"/>
+
+        <TextView
+            android:text="@string/no_proofs"
+            style="@style/TextEmptyView"
+            android:layout_below="@+id/foto_empty_view"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
 
 </RelativeLayout>

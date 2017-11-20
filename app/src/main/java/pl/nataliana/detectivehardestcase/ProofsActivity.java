@@ -50,7 +50,6 @@ public class ProofsActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Dialog dialog = proofsData.get(position);
                 Intent intent = new Intent(ProofsActivity.this, ProofsDetailsActivity.class);
                 startActivity(intent);
             }

@@ -79,6 +79,11 @@ public class StoryActivity extends AppCompatActivity {
         startActivity(c);
     }
 
+    public void searchArea(View view) {
+        Toast.makeText(StoryActivity.this, R.string.soon, Toast.LENGTH_SHORT).show();
+        //TODO: open new activity
+    }
+
     public void solveCase(View view) {
         Toast.makeText(StoryActivity.this, R.string.soon, Toast.LENGTH_SHORT).show();
         //TODO: open new activity
