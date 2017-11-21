@@ -21,83 +21,35 @@
             android:gravity="center_horizontal"
             android:text="@string/choose_scene" />
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="4dp"
-            android:background="@color/colorPrimary" />
-
-        <TextView
-            android:id="@+id/scene_1_title_tv"
-            style="@style/NormalText"
-            android:layout_width="match_parent"
-            android:gravity="start|end"
-            android:padding="4dp"
+        <Button
+            android:id="@+id/scene_1_title_btn"
+            android:layout_width="320dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/scene_button"
             android:text="@string/park_title"
-            android:textAllCaps="true" />
+            android:textColor="@color/white"
+            android:textSize="20sp" />
 
-        <TextView
-            android:id="@+id/scene_1_description_tv"
-            style="@style/NormalText"
-            android:layout_width="match_parent"
-            android:layout_marginBottom="8dp"
-            android:gravity="start|end"
-            android:padding="4dp"
-            android:text="@string/park_description"
-            android:textAllCaps="false" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="4dp"
-            android:background="@color/colorPrimary" />
-
-
-        <TextView
+        <Button
             android:id="@+id/scene_2_title_tv"
-            style="@style/NormalText"
-            android:layout_width="match_parent"
-            android:gravity="start|end"
-            android:padding="4dp"
+            android:layout_width="320dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/scene_button"
             android:text="@string/room_title"
-            android:textAllCaps="true" />
+            android:textColor="@color/white"
+            android:textSize="20sp" />
 
-        <TextView
-            android:id="@+id/scene_2_description_tv"
-            style="@style/NormalText"
-            android:layout_width="match_parent"
-            android:layout_marginBottom="8dp"
-            android:gravity="start|end"
-            android:padding="4dp"
-            android:text="@string/room_description"
-            android:textAllCaps="false" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="4dp"
-            android:background="@color/colorPrimary" />
-
-        <TextView
+        <Button
             android:id="@+id/scene_3_title_tv"
-            style="@style/NormalText"
-            android:layout_width="match_parent"
-            android:gravity="start|end"
-            android:padding="4dp"
+            android:layout_width="320dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/scene_button"
             android:text="@string/laboratory_title"
-            android:textAllCaps="true" />
-
-        <TextView
-            android:id="@+id/scene_3_description_tv"
-            style="@style/NormalText"
-            android:layout_width="match_parent"
-            android:layout_marginBottom="8dp"
-            android:gravity="start|end"
-            android:padding="4dp"
-            android:text="@string/laboratory_description"
-            android:textAllCaps="false" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="4dp"
-            android:background="@color/colorPrimary" />
+            android:textColor="@color/white"
+            android:textSize="20sp" />
 
     </LinearLayout>
 </ScrollView>
