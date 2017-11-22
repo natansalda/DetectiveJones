@@ -23,30 +23,30 @@
 
         <Button
             android:id="@+id/scene_1_title_btn"
-            android:layout_width="320dp"
-            android:layout_height="80dp"
+            android:layout_width="310dp"
+            android:layout_height="60dp"
             android:layout_margin="8dp"
-            android:background="@drawable/scene_button"
+            android:background="@drawable/button"
             android:text="@string/park_title"
             android:textColor="@color/white"
             android:textSize="20sp" />
 
         <Button
-            android:id="@+id/scene_2_title_tv"
-            android:layout_width="320dp"
-            android:layout_height="80dp"
+            android:id="@+id/scene_2_title_btn"
+            android:layout_width="310dp"
+            android:layout_height="60dp"
             android:layout_margin="8dp"
-            android:background="@drawable/scene_button"
+            android:background="@drawable/button"
             android:text="@string/room_title"
             android:textColor="@color/white"
             android:textSize="20sp" />
 
         <Button
-            android:id="@+id/scene_3_title_tv"
-            android:layout_width="320dp"
-            android:layout_height="80dp"
+            android:id="@+id/scene_3_title_btn"
+            android:layout_width="310dp"
+            android:layout_height="60dp"
             android:layout_margin="8dp"
-            android:background="@drawable/scene_button"
+            android:background="@drawable/button"
             android:text="@string/laboratory_title"
             android:textColor="@color/white"
             android:textSize="20sp" />

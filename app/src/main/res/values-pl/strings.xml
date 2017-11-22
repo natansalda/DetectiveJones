@@ -58,4 +58,12 @@
     <string name="no_proofs">Nie znaleziono jeszcze żadnych dowodów.</string>
     <string name="j3">No cóż, to się jeszcze okaże. Tymczasem postaraj się do czegoś przydać i idź przeszukać scene zbrodni. Może tam być kilka ciekawych dowdów, które czekają, żebyśmy je znaleźli. A i jeszcze jedno - nie zapomnij dokładnie zapoznać się z aktami sprawy!</string>
     <string name="p3">Już się robi detektywie Jones!</string>
+    <string name="choose_scene">Wybierz scenę, którą chcesz przeszukać</string>
+    <string name="park_title">Scena zbrodni - park</string>
+    <string name="park_description">To tutaj Katy została znaleziona martwa</string>
+    <string name="room_title">Pokój Katy</string>
+    <string name="room_description">To jest pokój w akadamiku, gdzie Katy mieszkała ze swoją współlokatorką</string>
+    <string name="laboratory_title">Uniwersytet - laboratorium</string>
+    <string name="laboratory_description">"To jest laboratorium na Uniwersytecie Nowego Jorku, gdzie Katy spędzała wiele czasu na swoich badaniach. "</string>
+    <string name="no_suspects">Nie masz jeszcze żadnych podejrzanych!</string>
 </resources>

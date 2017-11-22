@@ -64,4 +64,5 @@
     <string name="room_description">This is the room in a dormitory, where Katy and her roommate lived</string>
     <string name="laboratory_title">The university - laboratory</string>
     <string name="laboratory_description">This is the laboratory at the New York University, where Katy has been spending a lot of time on her reasearch.</string>
+    <string name="no_suspects">You don\'t have any suspects yet!</string>
 </resources>
