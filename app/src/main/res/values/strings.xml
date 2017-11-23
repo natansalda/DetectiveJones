@@ -65,4 +65,9 @@
     <string name="laboratory_title">The university - laboratory</string>
     <string name="laboratory_description">This is the laboratory at the New York University, where Katy has been spending a lot of time on her reasearch.</string>
     <string name="no_suspects">You don\'t have any suspects yet!</string>
+    <string name="new_evidence">You have found a new evidence! Check your evidence repository!</string>
+    <string name="found_items">You have found %1$d/2 items here</string>
+    <string name="books">You have found few Katy\'s books. They tell us nothing except that Katy was a really good student.</string>
+    <string name="glasses">Those are just some old, plastic glasses.</string>
+    <string name="body">Yes, this is where they found her...</string>
 </resources>

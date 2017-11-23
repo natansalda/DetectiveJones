@@ -39,6 +39,9 @@
         <activity
             android:name="pl.nataliana.detectivehardestcase.ScenesListActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name="pl.nataliana.detectivehardestcase.MurderSceneActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
