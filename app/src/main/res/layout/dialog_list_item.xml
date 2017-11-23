@@ -36,6 +36,7 @@
         android:gravity="left"
         android:text="@string/text_dialog"
         android:textAlignment="gravity"
+        android:layout_marginBottom="8dp"
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="normal" />
