@@ -44,6 +44,7 @@ public class MurderSceneActivity extends AppCompatActivity {
 
         goal_tv.setText(getString(R.string.found_items, valueOfItemsFound));
 
+        //Find an item, but only once
         head_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -58,19 +59,22 @@ public class MurderSceneActivity extends AppCompatActivity {
             }
         });
 
+        //Find an item, but only once
         statue_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (statueBTNClickedAlready){
+                if (statueBTNClickedAlready) {
                     Toast.makeText(MurderSceneActivity.this, R.string.clicked_twice, Toast.LENGTH_SHORT).show();
+                } else {
+                    valueOfItemsFound++;
+                    goal_tv.setText(getString(R.string.found_items, valueOfItemsFound));
+                    Toast.makeText(MurderSceneActivity.this, R.string.new_evidence, Toast.LENGTH_LONG).show();
+                    statueBTNClickedAlready = true;
                 }
-                valueOfItemsFound++;
-                goal_tv.setText(getString(R.string.found_items, valueOfItemsFound));
-                Toast.makeText(MurderSceneActivity.this, R.string.new_evidence, Toast.LENGTH_LONG).show();
-                statueBTNClickedAlready = true;
             }
         });
 
+        //No relevant item
         book_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -78,6 +82,7 @@ public class MurderSceneActivity extends AppCompatActivity {
             }
         });
 
+        //No relevant item
         glasses_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -85,6 +90,7 @@ public class MurderSceneActivity extends AppCompatActivity {
             }
         });
 
+        //No relevant item
         body_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
