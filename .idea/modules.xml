@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$USER_HOME$/AndroidStudioProjects/DetectiveHardestcase/DetectiveHardestcase.iml" filepath="$USER_HOME$/AndroidStudioProjects/DetectiveHardestcase/DetectiveHardestcase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DetectiveJones.iml" filepath="$PROJECT_DIR$/DetectiveJones.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$USER_HOME$/AndroidStudioProjects/DetectiveHardestcase/app/app.iml" filepath="$USER_HOME$/AndroidStudioProjects/DetectiveHardestcase/app/app.iml" />
     </modules>
   </component>
