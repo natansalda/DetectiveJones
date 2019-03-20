@@ -1,4 +1,4 @@
-package pl.nataliana.detectivehardestcase
+package pl.nataliana.detectivehardestcase.view
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,6 +8,7 @@ import android.view.WindowManager
 import android.widget.Toast
 import butterknife.ButterKnife
 import kotlinx.android.synthetic.main.activity_main.*
+import pl.nataliana.detectivehardestcase.R
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
@@ -24,7 +25,6 @@ class MainActivity : AppCompatActivity() {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN)
         //Bind the view with a layout
         setContentView(R.layout.activity_main)
-        ButterKnife.bind(this)
 
         //Set English Language
         english.setOnClickListener {

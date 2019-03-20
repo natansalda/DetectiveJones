@@ -1,9 +1,10 @@
-package pl.nataliana.detectivehardestcase
+package pl.nataliana.detectivehardestcase.view
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.WindowManager
 import butterknife.ButterKnife
+import pl.nataliana.detectivehardestcase.R
 
 class CaseActivity : AppCompatActivity() {
 
@@ -14,6 +15,5 @@ class CaseActivity : AppCompatActivity() {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN)
         //Bind the view with a layout
         setContentView(R.layout.activity_case)
-        ButterKnife.bind(this)
     }
 }

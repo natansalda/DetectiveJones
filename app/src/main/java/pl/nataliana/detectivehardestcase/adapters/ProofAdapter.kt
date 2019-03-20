@@ -10,7 +10,7 @@ import android.widget.TextView
 
 import java.util.ArrayList
 
-import pl.nataliana.detectivehardestcase.Dialog
+import pl.nataliana.detectivehardestcase.model.Dialog
 import pl.nataliana.detectivehardestcase.R
 
 class ProofAdapter(context: Context, proofsData: ArrayList<Dialog>) : ArrayAdapter<Dialog>(context, 0, proofsData) {

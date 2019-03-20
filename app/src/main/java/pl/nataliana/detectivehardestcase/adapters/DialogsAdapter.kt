@@ -8,8 +8,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import butterknife.BindView
 import butterknife.ButterKnife
-import pl.nataliana.detectivehardestcase.Dialog
 import pl.nataliana.detectivehardestcase.R
+import pl.nataliana.detectivehardestcase.model.Dialog
 
 class DialogsAdapter(private val dialogs: MutableList<Dialog>) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
