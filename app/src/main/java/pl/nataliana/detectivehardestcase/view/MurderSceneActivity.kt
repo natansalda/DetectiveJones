@@ -1,4 +1,4 @@
-package pl.nataliana.detectivehardestcase
+package pl.nataliana.detectivehardestcase.view
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
@@ -6,6 +6,7 @@ import android.view.WindowManager
 import android.widget.Toast
 import butterknife.ButterKnife
 import kotlinx.android.synthetic.main.activity_murder_scene.*
+import pl.nataliana.detectivehardestcase.R
 
 class MurderSceneActivity : AppCompatActivity() {
 
@@ -22,7 +23,6 @@ class MurderSceneActivity : AppCompatActivity() {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN)
         //Bind the view with a layout
         setContentView(R.layout.activity_murder_scene)
-        ButterKnife.bind(this)
 
         goal_tv.text = getString(R.string.found_items, valueOfItemsFound)
 

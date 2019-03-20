@@ -1,23 +1,19 @@
-package pl.nataliana.detectivehardestcase
+package pl.nataliana.detectivehardestcase.view
 
 import android.content.Intent
-import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.view.WindowManager
 import android.widget.AdapterView
-import android.widget.ImageView
 import android.widget.ListView
-import android.widget.TextView
 
 import java.util.ArrayList
 
-import butterknife.BindView
 import butterknife.ButterKnife
-import pl.nataliana.detectivehardestcase.adapters.DialogsAdapter
+import pl.nataliana.detectivehardestcase.R
 
-import pl.nataliana.detectivehardestcase.ChooseplayerActivity.Companion.NAME
+import pl.nataliana.detectivehardestcase.model.Dialog
 
 class ProofsActivity : AppCompatActivity() {
 

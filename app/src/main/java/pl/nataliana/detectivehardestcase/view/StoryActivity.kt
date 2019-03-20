@@ -1,4 +1,4 @@
-package pl.nataliana.detectivehardestcase
+package pl.nataliana.detectivehardestcase.view
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,6 +8,7 @@ import android.view.WindowManager
 import android.widget.Toast
 import butterknife.ButterKnife
 import kotlinx.android.synthetic.main.activity_story.*
+import pl.nataliana.detectivehardestcase.R
 
 class StoryActivity : AppCompatActivity() {
 
@@ -26,7 +27,6 @@ class StoryActivity : AppCompatActivity() {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN)
         //Bind the view with a layout
         setContentView(R.layout.activity_story)
-        ButterKnife.bind(this)
 
         //Get intents from previous activity
         val intent = intent

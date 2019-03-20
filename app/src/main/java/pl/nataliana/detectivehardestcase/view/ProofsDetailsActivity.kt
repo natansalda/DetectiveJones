@@ -1,11 +1,11 @@
-package pl.nataliana.detectivehardestcase
+package pl.nataliana.detectivehardestcase.view
 
-import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.WindowManager
 
 import butterknife.ButterKnife
+import pl.nataliana.detectivehardestcase.R
 
 
 class ProofsDetailsActivity : AppCompatActivity() {
@@ -17,6 +17,5 @@ class ProofsDetailsActivity : AppCompatActivity() {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN)
         //Bind the view with a layout
         setContentView(R.layout.proof_card)
-        ButterKnife.bind(this)
     }
 }

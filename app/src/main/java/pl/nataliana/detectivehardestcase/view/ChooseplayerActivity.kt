@@ -1,4 +1,4 @@
-package pl.nataliana.detectivehardestcase
+package pl.nataliana.detectivehardestcase.view
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,6 +8,7 @@ import android.view.WindowManager
 import android.widget.Toast
 import butterknife.ButterKnife
 import kotlinx.android.synthetic.main.activity_chooseplayer.*
+import pl.nataliana.detectivehardestcase.R
 
 class ChooseplayerActivity : AppCompatActivity() {
 
@@ -17,7 +18,6 @@ class ChooseplayerActivity : AppCompatActivity() {
     var score: Int = 0
     //This variable will keep player's school
     lateinit var school: String
-
 
     //This will prevent accidentaly leaving the application
     internal var doubleBackToExitPressedOnce = false
@@ -29,8 +29,25 @@ class ChooseplayerActivity : AppCompatActivity() {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN)
         //Bind the view with a layout
         setContentView(R.layout.activity_chooseplayer)
-        ButterKnife.bind(this)
 
+        hideViews()
+
+        //this is called when the user chooses the woman face picture
+        woman_img.setOnClickListener {
+            woman_img.setImageResource(R.drawable.player_face_f_selected)
+            man_img.setImageResource(R.drawable.player_face_m)
+            playerFace = R.drawable.player_face_f
+        }
+
+        //this is called when the user chooses the man face picture
+        man_img.setOnClickListener {
+            man_img.setImageResource(R.drawable.player_face_m_selected)
+            woman_img.setImageResource(R.drawable.player_face_f)
+            playerFace = R.drawable.player_face_m
+        }
+    }
+
+    private fun hideViews() {
         //This decides about visibility of views
         configure_txt.visibility = View.GONE
         woman_img.visibility = View.GONE
@@ -43,20 +60,6 @@ class ChooseplayerActivity : AppCompatActivity() {
         school3.visibility = View.GONE
         put_name.visibility = View.GONE
         choose_face.visibility = View.GONE
-
-        //this is called when the user chooses the woman face picture
-        woman_img!!.setOnClickListener {
-            woman_img!!.setImageResource(R.drawable.player_face_f_selected)
-            man_img!!.setImageResource(R.drawable.player_face_m)
-            playerFace = R.drawable.player_face_f
-        }
-
-        //this is called when the user chooses the man face picture
-        man_img!!.setOnClickListener {
-            man_img!!.setImageResource(R.drawable.player_face_m_selected)
-            woman_img!!.setImageResource(R.drawable.player_face_f)
-            playerFace = R.drawable.player_face_m
-        }
     }
 
     //this method is called when the user chooses 1st school
@@ -89,21 +92,21 @@ class ChooseplayerActivity : AppCompatActivity() {
 
     //This method is called when the user clicks "ok" button
     fun ok(view: View) {
-        welcome!!.visibility = View.GONE
-        welcome_txt!!.visibility = View.GONE
-        welcome_txt2!!.visibility = View.GONE
-        ok!!.visibility = View.GONE
-        configure_txt!!.visibility = View.VISIBLE
-        woman_img!!.visibility = View.VISIBLE
-        man_img!!.visibility = View.VISIBLE
+        welcome.visibility = View.GONE
+        welcome_txt.visibility = View.GONE
+        welcome_txt2.visibility = View.GONE
+        ok.visibility = View.GONE
+        configure_txt.visibility = View.VISIBLE
+        woman_img.visibility = View.VISIBLE
+        man_img.visibility = View.VISIBLE
         name.visibility = View.VISIBLE
-        user_configured!!.visibility = View.VISIBLE
-        choose_school!!.visibility = View.VISIBLE
-        school1!!.visibility = View.VISIBLE
-        school2!!.visibility = View.VISIBLE
-        school3!!.visibility = View.VISIBLE
-        put_name!!.visibility = View.VISIBLE
-        choose_face!!.visibility = View.VISIBLE
+        user_configured.visibility = View.VISIBLE
+        choose_school.visibility = View.VISIBLE
+        school1.visibility = View.VISIBLE
+        school2.visibility = View.VISIBLE
+        school3.visibility = View.VISIBLE
+        put_name.visibility = View.VISIBLE
+        choose_face.visibility = View.VISIBLE
     }
 
     override fun onBackPressed() {

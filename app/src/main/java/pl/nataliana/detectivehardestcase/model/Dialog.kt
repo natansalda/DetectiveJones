@@ -1,4 +1,4 @@
-package pl.nataliana.detectivehardestcase
+package pl.nataliana.detectivehardestcase.model
 
 class Dialog// Constructor that is used to create an instance of the Dialog object
 (// Store the id of the image

@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="pl.nataliana.detectivehardestcase.MainActivity"
+            android:name="pl.nataliana.detectivehardestcase.view.MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,29 +18,29 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="pl.nataliana.detectivehardestcase.ChooseplayerActivity"
+            android:name="pl.nataliana.detectivehardestcase.view.ChooseplayerActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden"/>
         <activity
-            android:name="pl.nataliana.detectivehardestcase.StoryActivity"
+            android:name="pl.nataliana.detectivehardestcase.view.StoryActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="pl.nataliana.detectivehardestcase.CaseActivity"
+            android:name="pl.nataliana.detectivehardestcase.view.CaseActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="pl.nataliana.detectivehardestcase.ProofsActivity"
+            android:name="pl.nataliana.detectivehardestcase.view.ProofsActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="pl.nataliana.detectivehardestcase.JonesActivity"
+            android:name="pl.nataliana.detectivehardestcase.view.JonesActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="pl.nataliana.detectivehardestcase.ProofsDetailsActivity"
+            android:name="pl.nataliana.detectivehardestcase.view.ProofsDetailsActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="pl.nataliana.detectivehardestcase.ScenesListActivity"
+            android:name="pl.nataliana.detectivehardestcase.view.ScenesListActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="pl.nataliana.detectivehardestcase.MurderSceneActivity"
+            android:name="pl.nataliana.detectivehardestcase.view.MurderSceneActivity"
             android:screenOrientation="portrait" />
     </application>
 
