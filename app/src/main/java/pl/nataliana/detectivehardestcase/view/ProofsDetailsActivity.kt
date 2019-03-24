@@ -1,10 +1,8 @@
 package pl.nataliana.detectivehardestcase.view
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.view.WindowManager
-
-import butterknife.ButterKnife
+import androidx.appcompat.app.AppCompatActivity
 import pl.nataliana.detectivehardestcase.R
 
 
