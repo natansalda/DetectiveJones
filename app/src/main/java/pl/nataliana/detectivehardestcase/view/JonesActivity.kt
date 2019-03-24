@@ -1,11 +1,10 @@
 package pl.nataliana.detectivehardestcase.view
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.LinearLayoutManager
 import android.view.View
 import android.view.WindowManager
-import butterknife.ButterKnife
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.dialog_list.*
 import pl.nataliana.detectivehardestcase.R
 import pl.nataliana.detectivehardestcase.adapters.DialogsAdapter

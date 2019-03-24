@@ -2,9 +2,8 @@ package pl.nataliana.detectivehardestcase.view
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.view.WindowManager
-import butterknife.ButterKnife
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_scenes_list.*
 import pl.nataliana.detectivehardestcase.R
 
