@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/grey"
-    tools:context="pl.nataliana.detectivehardestcase.ChooseplayerActivity">
+    tools:context="pl.nataliana.detectivehardestcase.view.ChooseplayerActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
