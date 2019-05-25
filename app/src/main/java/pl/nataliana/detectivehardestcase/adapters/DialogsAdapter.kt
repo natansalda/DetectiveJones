@@ -47,9 +47,9 @@ class DialogsAdapter(private val dialogs: MutableList<Dialog>) : RecyclerView.Ad
         }
 
         fun setDialog(dialog: Dialog) {
-            faceImageView!!.setImageResource(dialog.getmImageDrawable())
-            nameLabel!!.text = dialog.getmName()
-            dialogLabel!!.text = dialog.getmText()
+            faceImageView?.setImageResource(dialog.getmImageDrawable())
+            nameLabel?.text = dialog.getmName()
+            dialogLabel?.text = dialog.getmText()
         }
     }
 }
