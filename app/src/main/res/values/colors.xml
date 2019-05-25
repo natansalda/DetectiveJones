@@ -8,4 +8,6 @@
     <color name="grey">#363635</color>
     <color name="yellow">#FFFF00</color>
     <color name="red">#FF0000</color>
+    <color name="greyMain">#646464</color>
+
 </resources>
